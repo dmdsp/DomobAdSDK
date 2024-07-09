@@ -1,13 +1,11 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'DomobAdSDK_Example' do
   pod 'DomobAdSDK', :path => '../'
+  pod 'DomobAdSDK/DomobSDKAdapter', :path => '../'
+  pod 'DomobAdSDK/GMAdSDKAdapter', :path => '../'
+  pod 'DomobAdSDK/KSAdSDKAdapter', :path => '../'
 
-  target 'DomobAdSDK_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
 end

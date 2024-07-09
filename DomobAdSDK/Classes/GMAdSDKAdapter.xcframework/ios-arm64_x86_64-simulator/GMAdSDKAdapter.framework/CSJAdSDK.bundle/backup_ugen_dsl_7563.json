@@ -1,0 +1,172 @@
+{
+    "template_info": {
+        "sdk_version": "2.0.0"
+    },
+    "main_template": {
+        "id": "flex_layout",
+        "name": "FlexLayout",
+        "width": "wrap_content",
+        "height": "wrap_content",
+        "flexDirection": "column",
+        "background": "#00ffffff",
+        "children": [
+            {
+                "id": "close",
+                "name": "Image",
+                "width": "20",
+                "height": "20",
+                "alignSelf": "flex_end",
+                "marginRight": "8",
+                "padding": "4",
+                "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/ugen_icon_close.png",
+                "onTap": {
+                    "type": "close"
+                }
+            },
+            {
+                "id": "icon",
+                "name": "Image",
+                "marginTop": "1",
+                "background": "#00ffffff",
+                "width": "50",
+                "height": "50",
+                "marginRight": "4",
+                "marginLeft": "4",
+                "onTap": {
+                    "type": "clickEvent",
+                    "uchain": true
+                },
+                "src": "${icon.url}"
+            },
+            {
+                "id": "logo_icon",
+                "name": "Image",
+                "width": "32",
+                "height": "12",
+                "marginTop": "5",
+                "scaleType": "fitXY",
+                "alignSelf": "flex_end",
+                "marginRight": "4",
+                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+                "onTap": {
+                    "type": "openPolicy",
+                    "uchain": true
+                }
+            }
+        ]
+    },
+    "event_template": {
+        "clickEvent": {
+            "version": "1.0.0",
+            "main": "open_sass_live",
+            "lazyLoad": "0",
+            "events": [
+                {
+                    "name": "open_sass_live",
+                    "scheme": "uchain://open_sass_live?ad_id=${ad_id}&ad_info=${ad_info}&log_extra=${ext}&coupon=${coupon}&ec_schema=${ec_schema}&ecom_live_params=${ecom_live_params}&live_interaction_type=${live_interaction_type}&live_room_id=${live_room_id}",
+                    "params": {},
+                    "next": {},
+                    "callback": {
+                        "success": [],
+                        "fail": [
+                            {
+                                "name": "open_miniapp"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "open_miniapp",
+                    "scheme": "uchain://open_miniapp?ad_id=${ad_id}&ad_info=${ad_info}&log_extra=${ext}&wc_miniapp_info=${wc_miniapp_info}&target_url=${target_url}",
+                    "params": {},
+                    "next": {},
+                    "callback": {
+                        "success": [],
+                        "fail": [
+                            {
+                                "condition": "${playable_common != null && playable_common.is_playable_top_priority == true}",
+                                "name": "open_landing_page"
+                            },
+                            {
+                                "condition": "${playable_common == null || playable_common.is_playable_top_priority == false}",
+                                "name": "open_scheme"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "open_landing_page",
+                    "scheme": "uchain://open_landing_page?ad_id=${ad_id}&ad_info=${ad_info}&log_extra=${ext}&interaction_type=${interaction_type}&title=${title != null?title :'广告'}&url=${deep_link != null && deep_link.fallback_type == 1 ? deep_link.fallback_url : target_url}&button_text=${button_text!=null?button_text:'立即下载'}&gecko_id=${gecko_id}&block_auto_open=${block_auto_open}&ugeno=${ugeno}&page_render_type=${page_render_type}&session_params=${session_params}&dylite_info=${dylite_info}&title=${app_name != null ? app_name : (source != null ? source : title)}",
+                    "params": {},
+                    "next": {},
+                    "callback": {
+                        "success": [],
+                        "fail": [
+                            {
+                                "condition": "${playable_common != null && playable_common.is_playable_top_priority == true}",
+                                "name": "open_scheme"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "open_scheme",
+                    "scheme": "uchain://open_scheme?ad_id=${ad_id}&ad_info=${ad_info}&log_extra=${ext}&interaction_type=${interaction_type}&deep_link=${deep_link}&ulink=${ulink}&ulink_priority=${ulink_priority}&sub_convert_link=${sub_convert_link}&app_info=${app}",
+                    "params": {},
+                    "next": {
+                        "condition": "${if_both_open==1}",
+                        "name": "open_landing_page"
+                    },
+                    "callback": {
+                        "success": [],
+                        "fail": [
+                            {
+                                "condition": "${interaction_type == 3}",
+                                "name": "open_landing_page"
+                            },
+                            {
+                                "condition": "${interaction_type == 4}",
+                                "name": "download"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "download",
+                    "scheme": "uchain://download?ad_id=${ad_id}&ad_info=${ad_info}&log_extra=${ext}&app_info=${app}&download_conf=${download_conf}&appstore_jump_type=${appstore_jump_type}&market_url=${market_url}&download_sdk_conf=${download_sdk_conf}&icon=${icon}",
+                    "params": {},
+                    "next": {
+                        "name": "open_landing_page",
+                        "condition": "${if_both_open==1}"
+                    },
+                    "callback": {
+                        "success": [],
+                        "fail": [
+                            {
+                                "name": "open_landing_page"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "openPolicy": {
+            "version": "1.0.0",
+            "main": "open_policy",
+            "lazyLoad": "0",
+            "events": [
+                {
+                    "name": "open_policy",
+                    "scheme": "uchain://open_policy?ad_info=${ad_info}&adx_name=${adx_name}",
+                    "params": {},
+                    "next": {},
+                    "callback": {
+                        "success": [],
+                        "fail": []
+                    }
+                }
+            ]
+        }
+    }
+}
+

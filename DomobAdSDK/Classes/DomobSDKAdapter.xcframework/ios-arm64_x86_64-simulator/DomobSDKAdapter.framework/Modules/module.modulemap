@@ -1,0 +1,6 @@
+framework module DomobSDKAdapter {
+  umbrella header "DomobSDKAdapter.h"
+  export *
+
+  module * { export * }
+}

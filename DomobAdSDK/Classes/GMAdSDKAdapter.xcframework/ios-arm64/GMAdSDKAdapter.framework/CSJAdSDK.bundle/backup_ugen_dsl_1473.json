@@ -1,0 +1,218 @@
+{
+    "template_info": {
+        "sdk_version": "1.0.0"
+    },
+    "main_template": {
+        "id": "flex_layout",
+        "name": "FlexLayout",
+        "width": "match_parent",
+        "height": "wrap_content",
+        "marginTop": "0",
+        "flexDirection": "column",
+        "background": "#ffffff",
+        "onTap": {
+            "type": "clickEvent"
+        },
+        "children": [{
+                "id": "bg_image",
+                "name": "Image",
+                "width": "match_parent",
+                "height": "235",
+                "marginTop": "10",
+                "marginLeft": "10",
+                "marginRight": "10",
+                "scaleType": "fitXY",
+                "src": "${image[0].url}",
+                "gravity": "center",
+                "visibility": "${(image_mode != 5 && image_mode != 15 && image_mode != 154 && image_mode != 50) ? 'visible':'gone'}",
+                "onTap": {
+                    "type": "clickEvent"
+                }
+            },
+            {
+                "id": "frame_layout",
+                "name": "FrameLayout",
+                "width": "match_parent",
+                "height": "235",
+                "marginTop": "10",
+                "marginLeft": "10",
+                "marginRight": "10",
+                "visibility": "${(image_mode == 5 || image_mode == 15 || image_mode == 154 || image_mode == 50) ? 'visible':'gone'}",
+                "onTap": {
+                    "type": "clickEvent"
+                },
+                "children": [{
+                        "id": "VideoPlaceholder",
+                        "name": "VideoPlaceholder",
+                        "width": "match_parent",
+                        "height": "match_parent"
+                    },
+                    {
+                        "id": "corver_container",
+                        "name": "FrameLayout",
+                        "width": "match_parent",
+                        "height": "235",
+                        "marginTop": "0",
+                        "visibility": "gone",
+                        "background": "#50000000",
+                        "onTap": {
+                            "type": "clickEvent"
+                        },
+                        "children": [{
+                            "id": "center_container",
+                            "name": "FlexLayout",
+                            "width": "wrap_content",
+                            "height": "wrap_content",
+                            "flexDirection": "column",
+                            "layoutGravity": "center",
+                            "alignItems": "center",
+                            "children": [{
+                                    "id": "logo_image",
+                                    "name": "Image",
+                                    "width": "48",
+                                    "height": "48",
+                                    "marginTop": "0",
+                                    "scaleType": "fitXY",
+                                    "src": "${icon.url}",
+                                    "borderRadius": "24",
+                                    "onTap": {
+                                        "type": "clickEvent"
+                                    }
+                                },
+                                {
+                                    "id": "logo_text",
+                                    "name": "Text",
+                                    "width": "wrap_content",
+                                    "height": "wrap_content",
+                                    "text": "${source!=null && source!='' ? source : app.app_name}",
+                                    "paddingLeft": "2",
+                                    "paddingRight": "2",
+                                    "paddingTop": "2",
+                                    "paddingBottom": "2",
+                                    "marginTop": "12",
+                                    "textColor": "#ffffff",
+                                    "textAlign": "center",
+                                    "textSize": "10",
+                                    "borderRadius": "2",
+                                    "maxLines": "1",
+                                    "alignSelf": "center",
+                                    "onTap": {
+                                        "type": "clickEvent"
+                                    }
+                                },
+                                {
+                                    "id": "button",
+                                    "name": "Text",
+                                    "width": "wrap_content",
+                                    "height": "wrap_content",
+                                    "text": "${button_text}",
+                                    "paddingLeft": "4",
+                                    "paddingRight": "4",
+                                    "paddingTop": "5",
+                                    "paddingBottom": "5",
+                                    "marginTop": "20",
+                                    "textColor": "#ffffff",
+                                    "background": "#1A73E8",
+                                    "textAlign": "center",
+                                    "textSize": "13",
+                                    "borderRadius": "2",
+                                    "maxLines": "1",
+                                    "alignSelf": "center",
+                                    "onTap": {
+                                        "type": "clickEvent"
+                                    }
+                                }
+                            ]
+                        }]
+                    }
+                ]
+            },
+            {
+                "id": "title",
+                "name": "Text",
+                "width": "match_parent",
+                "height": "wrap_content",
+                "text": "${title}",
+                "marginTop": "10",
+                "marginLeft": "10",
+                "marginRight": "10",
+                "textColor": "#000000",
+                "background": "#ffffff",
+                "textAlign": "left",
+                "textSize": "14",
+                "maxLines": "1",
+                "onTap": {
+                    "type": "clickEvent"
+                }
+            },
+            {
+                "id": "bottom_container",
+                "name": "FrameLayout",
+                "width": "match_parent",
+                "height": "wrap_content",
+                "flexDirection": "row",
+                "marginLeft": "10",
+                "marginTop": "10",
+                "marginRight": "10",
+                "marginBottom": "10",
+                "onTap": {
+                    "type": "clickEvent"
+                },
+                "children": [{
+                        "id": "logo_icon",
+                        "name": "Image",
+                        "width": "44",
+                        "height": "17",
+                        "marginLeft": "0",
+                        "marginTop": "0",
+                        "layoutGravity": "left|center_vertical",
+                        "scaleType": "fitXY",
+                        "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+                        "alignSelf": "center",
+                        "onTap": {
+                            "type": "openPolicy"
+                        }
+                    },
+                    {
+                        "id": "source",
+                        "name": "Text",
+                        "width": "wrap_content",
+                        "height": "wrap_content",
+                        "text": "${source!=null && source!='' ? source : app.app_name}",
+                        "marginLeft": "46",
+                        "marginTop": "0",
+                        "layoutGravity": "left|center_vertical",
+                        "paddingLeft": "2",
+                        "paddingRight": "2",
+                        "paddingTop": "2",
+                        "paddingBottom": "2",
+                        "textColor": "#161823",
+                        "background": "#ffffff",
+                        "textAlign": "center",
+                        "textSize": "12",
+                        "alignSelf": "center",
+                        "maxLines": "1",
+                        "onTap": {
+                            "type": "clickEvent"
+                        }
+                    },
+                    {
+                        "id": "close",
+                        "name": "Image",
+                        "width": "13",
+                        "height": "13",
+                        "alignSelf": "center",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "layoutGravity": "right|center_vertical",
+                        "scaleType": "fitXY",
+                        "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_mpNativebanner_close.png",
+                        "onTap": {
+                            "type": "dislike"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

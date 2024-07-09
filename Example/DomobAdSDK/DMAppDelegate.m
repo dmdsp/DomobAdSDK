@@ -1,18 +1,22 @@
 //
 //  DMAppDelegate.m
-//  DomobAdSDK
+//  DMengAdSDK
 //
-//  Created by dmdsp on 07/09/2024.
-//  Copyright (c) 2024 dmdsp. All rights reserved.
+//  Created by 714145936@qq.com on 05/06/2024.
+//  Copyright (c) 2024 714145936@qq.com. All rights reserved.
 //
 
 #import "DMAppDelegate.h"
+#import "DMViewController.h"
 
 @implementation DMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[DMViewController new]];
+    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];   
     return YES;
 }
 

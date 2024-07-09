@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		325964F77FA4CAFD9F3908C7 /* Pods_DomobAdSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F5F6D14C06BC5A58E193AC /* Pods_DomobAdSDK_Example.framework */; };
-		34895CD0458F2E3B478886A7 /* Pods_DomobAdSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCED3EA63E2031B7B68DFC9 /* Pods_DomobAdSDK_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -24,6 +23,22 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BC977BB52C3D17BB00134E72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC977B922C3D17BA00134E72 /* Images.xcassets */; };
+		BC977BB62C3D17BB00134E72 /* BannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B952C3D17BA00134E72 /* BannerAdViewController.m */; };
+		BC977BB72C3D17BB00134E72 /* FeedAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B972C3D17BA00134E72 /* FeedAdViewController.m */; };
+		BC977BB82C3D17BB00134E72 /* InterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B992C3D17BA00134E72 /* InterstitialAdViewController.m */; };
+		BC977BB92C3D17BB00134E72 /* RewardVideoAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B9B2C3D17BA00134E72 /* RewardVideoAdViewController.m */; };
+		BC977BBA2C3D17BB00134E72 /* SplashAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B9D2C3D17BA00134E72 /* SplashAdViewController.m */; };
+		BC977BBB2C3D17BB00134E72 /* BannerAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA02C3D17BA00134E72 /* BannerAdapterViewController.m */; };
+		BC977BBC2C3D17BB00134E72 /* FeedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA22C3D17BA00134E72 /* FeedAdapterViewController.m */; };
+		BC977BBD2C3D17BB00134E72 /* InterstitialAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA42C3D17BA00134E72 /* InterstitialAdapterViewController.m */; };
+		BC977BBE2C3D17BB00134E72 /* RewardVideoAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA62C3D17BA00134E72 /* RewardVideoAdapterViewController.m */; };
+		BC977BBF2C3D17BB00134E72 /* SplashAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA82C3D17BA00134E72 /* SplashAdapterViewController.m */; };
+		BC977BC02C3D17BB00134E72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC977BAC2C3D17BA00134E72 /* InfoPlist.strings */; };
+		BC977BC12C3D17BB00134E72 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BAE2C3D17BA00134E72 /* UIView+Toast.m */; };
+		BC977BC22C3D17BB00134E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC977BB02C3D17BA00134E72 /* LaunchScreen.storyboard */; };
+		BC977BC32C3D17BB00134E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC977BB22C3D17BA00134E72 /* Main.storyboard */; };
+		BC977BC42C3D17BB00134E72 /* DMengAdSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC977BB42C3D17BA00134E72 /* DMengAdSDK-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,14 +73,39 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8235FAFB843E3653CBF16325 /* Pods-DomobAdSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomobAdSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-DomobAdSDK_Tests/Pods-DomobAdSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94F5F6D14C06BC5A58E193AC /* Pods_DomobAdSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomobAdSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CCED3EA63E2031B7B68DFC9 /* Pods_DomobAdSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomobAdSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADD936493F6184184F600206 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CF7F71D9F42BCB37A0A021CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D80BA6C80FFE5E17E3D2793E /* Pods-DomobAdSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomobAdSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DomobAdSDK_Tests/Pods-DomobAdSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDA88D204A464D11EA04AD84 /* DomobAdSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DomobAdSDK.podspec; path = ../DomobAdSDK.podspec; sourceTree = "<group>"; };
+		ADD936493F6184184F600206 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BC977B922C3D17BA00134E72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC977B932C3D17BA00134E72 /* DMengAdSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMengAdSDK-Prefix.pch"; sourceTree = "<group>"; };
+		BC977B942C3D17BA00134E72 /* BannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerAdViewController.h; sourceTree = "<group>"; };
+		BC977B952C3D17BA00134E72 /* BannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerAdViewController.m; sourceTree = "<group>"; };
+		BC977B962C3D17BA00134E72 /* FeedAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAdViewController.h; sourceTree = "<group>"; };
+		BC977B972C3D17BA00134E72 /* FeedAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAdViewController.m; sourceTree = "<group>"; };
+		BC977B982C3D17BA00134E72 /* InterstitialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialAdViewController.h; sourceTree = "<group>"; };
+		BC977B992C3D17BA00134E72 /* InterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialAdViewController.m; sourceTree = "<group>"; };
+		BC977B9A2C3D17BA00134E72 /* RewardVideoAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVideoAdViewController.h; sourceTree = "<group>"; };
+		BC977B9B2C3D17BA00134E72 /* RewardVideoAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVideoAdViewController.m; sourceTree = "<group>"; };
+		BC977B9C2C3D17BA00134E72 /* SplashAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashAdViewController.h; sourceTree = "<group>"; };
+		BC977B9D2C3D17BA00134E72 /* SplashAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashAdViewController.m; sourceTree = "<group>"; };
+		BC977B9F2C3D17BA00134E72 /* BannerAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerAdapterViewController.h; sourceTree = "<group>"; };
+		BC977BA02C3D17BA00134E72 /* BannerAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerAdapterViewController.m; sourceTree = "<group>"; };
+		BC977BA12C3D17BA00134E72 /* FeedAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAdapterViewController.h; sourceTree = "<group>"; };
+		BC977BA22C3D17BA00134E72 /* FeedAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAdapterViewController.m; sourceTree = "<group>"; };
+		BC977BA32C3D17BA00134E72 /* InterstitialAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialAdapterViewController.h; sourceTree = "<group>"; };
+		BC977BA42C3D17BA00134E72 /* InterstitialAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialAdapterViewController.m; sourceTree = "<group>"; };
+		BC977BA52C3D17BA00134E72 /* RewardVideoAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVideoAdapterViewController.h; sourceTree = "<group>"; };
+		BC977BA62C3D17BA00134E72 /* RewardVideoAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVideoAdapterViewController.m; sourceTree = "<group>"; };
+		BC977BA72C3D17BA00134E72 /* SplashAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashAdapterViewController.h; sourceTree = "<group>"; };
+		BC977BA82C3D17BA00134E72 /* SplashAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashAdapterViewController.m; sourceTree = "<group>"; };
+		BC977BAA2C3D17BA00134E72 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		BC977BAB2C3D17BA00134E72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		BC977BAE2C3D17BA00134E72 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		BC977BAF2C3D17BA00134E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC977BB12C3D17BA00134E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		BC977BB42C3D17BA00134E72 /* DMengAdSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DMengAdSDK-Info.plist"; sourceTree = "<group>"; };
+		CF7F71D9F42BCB37A0A021CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DDA88D204A464D11EA04AD84 /* DomobAdSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DomobAdSDK.podspec; path = ../DomobAdSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E161851CA04670E32D2B9E31 /* Pods-DomobAdSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomobAdSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-DomobAdSDK_Example/Pods-DomobAdSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +128,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				34895CD0458F2E3B478886A7 /* Pods_DomobAdSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +163,6 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				94F5F6D14C06BC5A58E193AC /* Pods_DomobAdSDK_Example.framework */,
-				9CCED3EA63E2031B7B68DFC9 /* Pods_DomobAdSDK_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +175,15 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DMViewController.h */,
 				6003F5A6195388D20070C39A /* DMViewController.m */,
+				BC977BB32C3D17BA00134E72 /* Base.lproj */,
+				BC977B9E2C3D17BA00134E72 /* DMAdSDKDemo */,
+				BC977BB42C3D17BA00134E72 /* DMengAdSDK-Info.plist */,
+				BC977B932C3D17BA00134E72 /* DMengAdSDK-Prefix.pch */,
+				BC977BAD2C3D17BA00134E72 /* en.lproj */,
+				BC977B922C3D17BA00134E72 /* Images.xcassets */,
+				BC977BAA2C3D17BA00134E72 /* UIView+Toast.h */,
+				BC977BAE2C3D17BA00134E72 /* UIView+Toast.m */,
+				BC977BA92C3D17BA00134E72 /* UnionAdDemo */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -185,15 +232,63 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BC977B9E2C3D17BA00134E72 /* DMAdSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BC977B942C3D17BA00134E72 /* BannerAdViewController.h */,
+				BC977B952C3D17BA00134E72 /* BannerAdViewController.m */,
+				BC977B962C3D17BA00134E72 /* FeedAdViewController.h */,
+				BC977B972C3D17BA00134E72 /* FeedAdViewController.m */,
+				BC977B982C3D17BA00134E72 /* InterstitialAdViewController.h */,
+				BC977B992C3D17BA00134E72 /* InterstitialAdViewController.m */,
+				BC977B9A2C3D17BA00134E72 /* RewardVideoAdViewController.h */,
+				BC977B9B2C3D17BA00134E72 /* RewardVideoAdViewController.m */,
+				BC977B9C2C3D17BA00134E72 /* SplashAdViewController.h */,
+				BC977B9D2C3D17BA00134E72 /* SplashAdViewController.m */,
+			);
+			path = DMAdSDKDemo;
+			sourceTree = "<group>";
+		};
+		BC977BA92C3D17BA00134E72 /* UnionAdDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BC977B9F2C3D17BA00134E72 /* BannerAdapterViewController.h */,
+				BC977BA02C3D17BA00134E72 /* BannerAdapterViewController.m */,
+				BC977BA12C3D17BA00134E72 /* FeedAdapterViewController.h */,
+				BC977BA22C3D17BA00134E72 /* FeedAdapterViewController.m */,
+				BC977BA32C3D17BA00134E72 /* InterstitialAdapterViewController.h */,
+				BC977BA42C3D17BA00134E72 /* InterstitialAdapterViewController.m */,
+				BC977BA52C3D17BA00134E72 /* RewardVideoAdapterViewController.h */,
+				BC977BA62C3D17BA00134E72 /* RewardVideoAdapterViewController.m */,
+				BC977BA72C3D17BA00134E72 /* SplashAdapterViewController.h */,
+				BC977BA82C3D17BA00134E72 /* SplashAdapterViewController.m */,
+			);
+			path = UnionAdDemo;
+			sourceTree = "<group>";
+		};
+		BC977BAD2C3D17BA00134E72 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BC977BAC2C3D17BA00134E72 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		BC977BB32C3D17BA00134E72 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BC977BB02C3D17BA00134E72 /* LaunchScreen.storyboard */,
+				BC977BB22C3D17BA00134E72 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		F183B83B1D79119733A957D3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E161851CA04670E32D2B9E31 /* Pods-DomobAdSDK_Example.debug.xcconfig */,
 				2C511BEF43B31E4B743A22DE /* Pods-DomobAdSDK_Example.release.xcconfig */,
-				D80BA6C80FFE5E17E3D2793E /* Pods-DomobAdSDK_Tests.debug.xcconfig */,
-				8235FAFB843E3653CBF16325 /* Pods-DomobAdSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +304,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				E9149D917796C816098F50F6 /* [CP] Embed Pods Frameworks */,
+				7F4207141DFB32FF602C03E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,11 +319,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DomobAdSDK_Tests" */;
 			buildPhases = (
-				2FD62BB55632F9DAD73A3419 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				3897CF1DD05C39496D1372EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +343,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dmdsp;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 432Y475BJD;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +356,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -279,7 +377,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				BC977BC02C3D17BB00134E72 /* InfoPlist.strings in Resources */,
+				BC977BB52C3D17BB00134E72 /* Images.xcassets in Resources */,
+				BC977BC32C3D17BB00134E72 /* Main.storyboard in Resources */,
+				BC977BC42C3D17BB00134E72 /* DMengAdSDK-Info.plist in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				BC977BC22C3D17BB00134E72 /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -296,46 +399,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2FD62BB55632F9DAD73A3419 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DomobAdSDK_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3897CF1DD05C39496D1372EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DomobAdSDK_Tests/Pods-DomobAdSDK_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DomobAdSDK_Tests/Pods-DomobAdSDK_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		56B25EED7D9282230964C65F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +421,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7F4207141DFB32FF602C03E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DomobAdSDK_Example/Pods-DomobAdSDK_Example-resources.sh",
+				"${PODS_ROOT}/Ads-CN-Beta/SDK/CSJAdSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DomobAdSDK/DMAdSDK_Bundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSJAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DMAdSDK_Bundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DomobAdSDK_Example/Pods-DomobAdSDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E9149D917796C816098F50F6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,11 +448,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DomobAdSDK_Example/Pods-DomobAdSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DomobAdSDK/DomobAdSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK/KSAdSDK.framework/KSAdSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DomobAdSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSAdSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -384,8 +475,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DMAppDelegate.m in Sources */,
+				BC977BBE2C3D17BB00134E72 /* RewardVideoAdapterViewController.m in Sources */,
+				BC977BB62C3D17BB00134E72 /* BannerAdViewController.m in Sources */,
+				BC977BBC2C3D17BB00134E72 /* FeedAdapterViewController.m in Sources */,
+				BC977BC12C3D17BB00134E72 /* UIView+Toast.m in Sources */,
+				BC977BBD2C3D17BB00134E72 /* InterstitialAdapterViewController.m in Sources */,
+				BC977BBA2C3D17BB00134E72 /* SplashAdViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* DMViewController.m in Sources */,
+				BC977BBF2C3D17BB00134E72 /* SplashAdapterViewController.m in Sources */,
+				BC977BBB2C3D17BB00134E72 /* BannerAdapterViewController.m in Sources */,
+				BC977BB72C3D17BB00134E72 /* FeedAdViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				BC977BB82C3D17BB00134E72 /* InterstitialAdViewController.m in Sources */,
+				BC977BB92C3D17BB00134E72 /* RewardVideoAdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +532,30 @@
 				71719F9E1E33DC2100824A3D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC977BAC2C3D17BA00134E72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC977BAB2C3D17BA00134E72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC977BB02C3D17BA00134E72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC977BAF2C3D17BA00134E72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC977BB22C3D17BA00134E72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC977BB12C3D17BA00134E72 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -513,11 +639,12 @@
 			baseConfigurationReference = E161851CA04670E32D2B9E31 /* Pods-DomobAdSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 432Y475BJD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DomobAdSDK/DomobAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "DomobAdSDK/DomobAdSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdk.DMAdSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -529,11 +656,12 @@
 			baseConfigurationReference = 2C511BEF43B31E4B743A22DE /* Pods-DomobAdSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 432Y475BJD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DomobAdSDK/DomobAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "DomobAdSDK/DomobAdSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdk.DMAdSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -542,7 +670,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D80BA6C80FFE5E17E3D2793E /* Pods-DomobAdSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -567,7 +694,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8235FAFB843E3653CBF16325 /* Pods-DomobAdSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
