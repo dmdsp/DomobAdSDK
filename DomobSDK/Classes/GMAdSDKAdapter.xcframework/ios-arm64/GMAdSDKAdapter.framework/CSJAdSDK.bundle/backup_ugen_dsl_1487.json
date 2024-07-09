@@ -1,0 +1,183 @@
+{
+    "template_info": {
+        "sdk_version": "2.0.0"
+    },
+    "main_template": {
+        "flexDirection": "row",
+        "width": "match_parent",
+        "height": "wrap_content",
+        "flexWrap": "nowrap",
+        "justifyContent": "space_around",
+        "alignItems": "flex_start",
+        "paddingTop": 16,
+        "paddingLeft": 16,
+        "paddingBottom": 16,
+        "paddingRight": 16,
+        "borderWidth": 0,
+        "background": "#ffffff",
+        "id": "root",
+        "name": "FlexLayout",
+        "children": [{
+            "width": 138,
+            "ratio": 1.52,
+            "borderColor": "#000000",
+            "borderWidth": 0,
+            "background": "transparent",
+            "scaleType": "centerInside",
+            "id": "6cf38b",
+            "name": "FrameLayout",
+            "children": [{
+                "width": "match_parent",
+                "height": "match_parent",
+                "src": "${image[0].url}",
+                "availability": "${(image_mode != 5 && image_mode != 15 && image_mode != 154 && image_mode != 50) ? 'available' : 'unavailable'}",
+                "scaleType": "${image_mode == 131 || image_mode == 2 || image_mode == 4 ? 'fitCenter' : 'centerCrop'}",
+                "isBgGaussianBlur": true,
+                "id": "videoImageBudgetImage_6cf38b",
+                "name": "Image"
+            }, {
+                "width": "match_parent",
+                "height": "match_parent",
+                "availability": "${(image_mode == 5 || image_mode == 15 || image_mode == 154 || image_mode == 50 || image_mode == 166) ? 'available' : 'unavailable'}",
+                "src": "${video.video_url}",
+                "coverSrc": "${image[0].url}",
+                "id": "VideoPlaceholder",
+                "name": "VideoPlaceholder",
+                "onTap": {
+                    "type": "pauseVideo",
+                    "success": {
+                        "type": "onShow",
+                        "nodeId": "convertViewShowPlayButtonFrame_6cf38b"
+                    }
+                }
+            }, {
+                "layoutGravity": "bottom|right",
+                "width": 44,
+                "height": 15,
+                "scaleType": "fitCenter",
+                "flexShrink": 1,
+                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+                "id": "5b5076",
+                "name": "Image",
+                "onTap": {
+                    "type": "openPolicy"
+                }
+            }, {
+                "background": "#60000000",
+                "visibility": "gone",
+                "width": "match_parent",
+                "height": "match_parent",
+                "id": "convertViewShowPlayButtonFrame_6cf38b",
+                "name": "FrameLayout",
+                "children": [{
+                    "width": 50,
+                    "height": 50,
+                    "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_play.png",
+                    "scaleType": "fitCenter",
+                    "layoutGravity": "center",
+                    "id": "convertViewShowPlayButton_6cf38b",
+                    "name": "Image"
+                }],
+                "onTap": {
+                    "type": "playVideo",
+                    "success": {
+                        "type": "onDismiss",
+                        "nodeId": "convertViewShowPlayButtonFrame_6cf38b"
+                    }
+                }
+            }],
+            "onTap": {
+                "type": "clickEvent"
+            }
+        }, {
+            "flexDirection": "column",
+            "width": "match_parent",
+            "height": "wrap_content",
+            "flexWrap": "nowrap",
+            "justifyContent": "flex_start",
+            "alignItems": "flex_start",
+            "borderColor": "#000000",
+            "borderWidth": 0,
+            "background": "transparent",
+            "flexGrow": 2,
+            "flexShrink": 2,
+            "id": "6e715c",
+            "name": "FlexLayout",
+            "children": [{
+                "width": "wrap_content",
+                "height": "wrap_content",
+                "marginLeft": 23,
+                "marginBottom": 53,
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "background": "transparent",
+                "textSize": 15,
+                "textColor": "#222222",
+                "textAlign": "left",
+                "lines": 1,
+                "maxLines": 1,
+                "textStyle": "bold",
+                "ellipsize": "end",
+                "text": "${title}",
+                "id": "bd5cfc",
+                "name": "Text",
+                "onTap": {
+                    "type": "clickEvent"
+                }
+            }, {
+                "flexDirection": "row",
+                "flexWrap": "nowrap",
+                "alignItems": "flex_start",
+                "justifyContent": "space_between",
+                "width": "match_parent",
+                "height": "wrap_content",
+                "id": "virtualRowFlexLayout_6e715c",
+                "name": "FlexLayout",
+                "children": [{
+                    "width": "wrap_content",
+                    "height": "wrap_content",
+                    "marginLeft": 23,
+                    "paddingTop": 2,
+                    "paddingLeft": 2,
+                    "paddingBottom": 2,
+                    "paddingRight": 2,
+                    "borderColor": "#000000",
+                    "borderWidth": 0,
+                    "background": "transparent",
+                    "textSize": 13,
+                    "textColor": "#999999",
+                    "textAlign": "left",
+                    "lines": 1,
+                    "maxLines": 1,
+                    "text": "${source != null && source != '' ? source : app.app_name}",
+                    "flexGrow": 0,
+                    "flexShrink": 0,
+                    "id": "e5a85b",
+                    "name": "Text",
+                    "h5_convertSource": "origin(e5a85b)(source)",
+                    "onTap": {
+                        "type": "clickEvent"
+                    }
+                }, {
+                    "width": 11,
+                    "height": 11,
+                    "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_close_gray.png",
+                    "scaleType": "fitXY",
+                    "flexShrink": "0",
+                    "id": "c4df7f",
+                    "name": "Image",
+                    "alignSelf": "center",
+                    "onTap": {
+                        "type": "dislike"
+                    }
+                }]
+            }],
+            "onTap": {
+                "type": "clickEvent"
+            }
+        }],
+        "onTap": {
+            "type": "clickEvent"
+        }
+    }
+}

@@ -1,0 +1,213 @@
+{
+  "template_info": {
+    "sdk_version": "2.0.0"
+  },
+  "main_template": {
+    "flexDirection": "row",
+    "width": "match_parent",
+    "height": "wrap_content",
+    "flexWrap": "nowrap",
+    "justifyContent": "space_around",
+    "alignItems": "flex_start",
+    "paddingTop": 16,
+    "paddingLeft": 16,
+    "paddingBottom": 16,
+    "paddingRight": 16,
+    "borderWidth": 0,
+    "background": "#ffffff",
+    "id": "root",
+    "name": "FlexLayout",
+    "children": [
+      {
+        "flexDirection": "column",
+        "width": "match_parent",
+        "height": "90",
+        "flexWrap": "nowrap",
+        "justifyContent": "space_between",
+        "alignItems": "flex_start",
+        "borderColor": "#000000",
+        "borderWidth": 0,
+        "background": "transparent",
+        "flexGrow": 2,
+        "flexShrink": 2,
+        "id": "c54c94",
+        "name": "FlexLayout",
+        "children": [
+          {
+            "width": "match_parent",
+            "height": "wrap_content",
+            "marginRight": 23,
+            "borderColor": "#000000",
+            "borderWidth": 0,
+            "background": "transparent",
+            "textSize": 15,
+            "textColor": "#222222",
+            "textAlign": "left",
+            "lines": 1,
+            "maxLines": 1,
+            "text": "${title}",
+            "id": "b0040a",
+            "name": "Text",
+            "ellipsize": "end",
+            "onTap": {
+              "type": "clickEvent"
+            }
+          },
+          {
+            "flexDirection": "row",
+            "flexWrap": "nowrap",
+            "alignItems": "flex_start",
+            "justifyContent": "space_between",
+            "width": "match_parent",
+            "height": "wrap_content",
+            "id": "virtualRowFlexLayout_c54c94",
+            "alginItems": "center",
+            "name": "FlexLayout",
+            "children": [
+              {
+                "width": "154",
+                "height": "wrap_content",
+                "paddingTop": 2,
+                "paddingLeft": 2,
+                "paddingBottom": 2,
+                "paddingRight": 0,
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "ellipsize": "end",
+                "background": "transparent",
+                "textSize": 13,
+                "textColor": "#999999",
+                "textAlign": "left",
+                "lines": 1,
+                "maxLines": 1,
+                "text": "${source != null&&source!='' ? source : app.app_name}",
+                "flexGrow": 2,
+                "flexShrink": 0,
+                "id": "e6997a",
+                "name": "Text",
+                "onTap": {
+                  "type": "clickEvent"
+                }
+              },
+              {
+                "width": 15,
+                "height": 11,
+                "marginRight": 23,
+                "paddingTop": 2,
+                "paddingLeft": 4,
+                "paddingBottom": 2,
+                "paddingRight": 4,
+                "borderColor": "rgba(255, 255, 255, 0.2)",
+                "borderWidth": 1,
+                "borderRadius": 8,
+                "background": "transparent",
+                "textSize": 10,
+                "textColor": "rgba(22, 24, 35, 0.34)",
+                "textAlign": "center",
+                "lines": 2,
+                "flexShrink": "0",
+                "maxLines": 2,
+                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_close_gray.png",
+                "id": "0f9ce8",
+                "name": "Image",
+                "onTap": {
+                  "type": "dislike"
+                }
+              }
+            ]
+          }
+        ],
+        "onTap": {
+          "type": "clickEvent"
+        }
+      },
+      {
+        "width": 138,
+        "ratio": 1.52,
+        "borderColor": "#000000",
+        "borderWidth": 0,
+        "background": "transparent",
+        "scaleType": "centerInside",
+        "id": "0e525b",
+        "flexShrink": "0",
+        "name": "FrameLayout",
+        "children": [
+          {
+            "width": "match_parent",
+            "height": "match_parent",
+            "src": "${image[0].url}",
+            "availability": "${(image_mode != 5 && image_mode != 15 && image_mode != 154 && image_mode != 50) ? 'available':'unavailable'}",
+            "scaleType": "centerCrop",
+            "isBgGaussianBlur": true,
+            "id": "videoImageBudgetImage_0e525b",
+            "name": "Image"
+          },
+          {
+            "width": "match_parent",
+            "height": "match_parent",
+            "availability": "${(image_mode == 5 || image_mode == 15 || image_mode == 154 || image_mode == 50 || image_mode == 166) ? 'available':'unavailable'}",
+            "src": "${video.video_url}",
+            "id": "VideoPlaceholder",
+            "name": "VideoPlaceholder",
+            "onTap": {
+              "type": "pauseVideo",
+              "success": {
+                "type": "onShow",
+                "nodeId": "convertViewShowPlayButtonFrame_0e525b"
+              }
+            }
+          },
+          {
+            "id": "6d716b",
+            "name": "Image",
+            "width": "44",
+            "height": "15",
+            "marginBottom": 0,
+            "marginRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutGravity": "bottom|right",
+            "scaleType": "fitXY",
+            "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+            "flexShrink": "1",
+            "onTap": {
+              "type": "openPolicy"
+            }
+          },
+          {
+            "background": "#60000000",
+            "visibility": "gone",
+            "width": "match_parent",
+            "height": "match_parent",
+            "id": "convertViewShowPlayButtonFrame_0e525b",
+            "name": "FrameLayout",
+            "children": [
+              {
+                "width": 50,
+                "height": 50,
+                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_play.png",
+                "scaleType": "fitCenter",
+                "layoutGravity": "center",
+                "id": "convertViewShowPlayButton_0e525b",
+                "name": "Image"
+              }
+            ],
+            "onTap": {
+              "type": "playVideo",
+              "success": {
+                "type": "onDismiss",
+                "nodeId": "convertViewShowPlayButtonFrame_0e525b"
+              }
+            }
+          }
+        ],
+        "onTap": {
+          "type": "clickEvent"
+        }
+      }
+    ],
+    "onTap": {
+      "type": "clickEvent"
+    }
+  }
+}
