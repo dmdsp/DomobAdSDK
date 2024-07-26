@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, DMFeedAdTemplate) {
 typedef void(^ClickLinkEvent)(void);
 typedef void(^ClickCloseEvent)(void);
 typedef void(^DidShowEvent)(void);
+typedef void(^DetailViewDidClose)(void);
+typedef void(^DetailViewDidPresentScreen)(void);
 
 @interface DM_FeedView : UIView
 //背景view
@@ -51,10 +53,14 @@ typedef void(^DidShowEvent)(void);
 @property (nonatomic, strong) UILabel *appLab;
 //当前的渲染模版
 @property (nonatomic, assign) DMFeedAdTemplate adTemplate;
+@property (nonatomic, strong) UIViewController *presentAdViewController;
+
 
 @property (nonatomic, copy) ClickLinkEvent linkEvent;
 @property (nonatomic, copy) ClickCloseEvent closeEvent;
 @property (nonatomic, copy) DidShowEvent showEvent;
+@property (nonatomic, copy) DetailViewDidClose detailViewDidClose;
+@property (nonatomic, copy) DetailViewDidPresentScreen detailViewDidPresentScreen;
 
 -(instancetype)initWithFeedAdTemplate:(DMFeedAdTemplate)adTemplate;
 

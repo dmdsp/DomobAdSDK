@@ -28,6 +28,8 @@ typedef void(^DidShowEvent)(void);
 @property (nonatomic, strong) UIImageView *adImageView;
 
 @property (nonatomic, strong) DM_ADModel *adModel;
+@property (nonatomic, strong) UIViewController *presentAdViewController;
+
 //广告
 @property (nonatomic, strong) UILabel *adLab;
 //关闭按钮

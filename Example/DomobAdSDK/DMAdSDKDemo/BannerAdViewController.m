@@ -80,6 +80,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row==0) {
         self.bannerAd = [[DM_BannerAd new] loadBannerAdTemplateAdWithSlotID:@"118171711352334" popupViewHidden:NO delegate:self];
+        self.bannerAd.presentAdViewController = self;
+
     }else{
         self.bannerAd = [[DM_BannerAd new] loadBannerAdTemplateAdWithSlotID:@"118171711352334" popupViewHidden:YES delegate:self];
     }

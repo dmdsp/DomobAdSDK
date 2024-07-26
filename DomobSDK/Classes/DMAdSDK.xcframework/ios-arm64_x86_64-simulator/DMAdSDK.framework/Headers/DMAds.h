@@ -39,7 +39,8 @@ typedef void(^CompletionEvent)(BOOL success);
 
 // 单例
 +(instancetype)shareInstance;
-
+/// 关闭定位权限,但还是需要配置,只是SDK不会去获取定位信息
+-(void)setLocationDisable;
 //SDK 初始化
 -(void)initSDK;
 //聚合初始化
@@ -50,7 +51,9 @@ typedef void(^CompletionEvent)(BOOL success);
 -(NSString*)getSdkDevice;
 //
 -(NSString*)getUnionSdkTracker:(DMUnionTrackerModel *)unionTrackerModel templateId:(AdTemplateId)templateId;
-
+///  设置调试模式,上线前请关闭.
+/// - Parameter debugMode: 如果想获得测试广告请传Yes,默认为No,
+- (void)setDebugMode:(BOOL)debugMode;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -4,38 +4,22 @@ PODS:
   - Ads-CN-Beta/BUAdSDK (6.2.0.0)
   - Ads-CN-Beta/CSJMediation (6.2.0.0):
     - Ads-CN-Beta/BUAdSDK
-  - AFNetworking (4.0.1):
-    - AFNetworking/NSURLSession (= 4.0.1)
-    - AFNetworking/Reachability (= 4.0.1)
-    - AFNetworking/Security (= 4.0.1)
-    - AFNetworking/Serialization (= 4.0.1)
-    - AFNetworking/UIKit (= 4.0.1)
-  - AFNetworking/NSURLSession (4.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
-  - AFNetworking/UIKit (4.0.1):
-    - AFNetworking/NSURLSession
-  - DomobAdSDK (2.4.5):
-    - DomobAdSDK/DMAdSDK (= 2.4.5)
-  - DomobAdSDK/DMAdSDK (2.4.5):
-    - AFNetworking
+  - DomobSDK (3.4.1):
+    - DomobSDK/DMAdSDK (= 3.4.1)
+  - DomobSDK/DMAdSDK (3.4.1):
     - Masonry
     - Protobuf (~> 3.27)
     - SDWebImage
-  - DomobAdSDK/DomobSDKAdapter (2.4.5):
-    - DomobAdSDK/DMAdSDK
-  - DomobAdSDK/GMAdSDKAdapter (2.4.5):
+  - DomobSDK/DomobSDKAdapter (3.4.1):
+    - DomobSDK/DMAdSDK
+  - DomobSDK/GMAdSDKAdapter (3.4.1):
     - Ads-CN-Beta (= 6.2.0.0)
     - Ads-CN-Beta/CSJMediation
-    - DomobAdSDK/DomobSDKAdapter
+    - DomobSDK/DomobSDKAdapter
     - GMKsAdapter-Beta (~> 3.3.64.0.0)
     - KSAdSDK (~> 3.3.61)
-  - DomobAdSDK/KSAdSDKAdapter (2.4.5):
-    - DomobAdSDK/DomobSDKAdapter
+  - DomobSDK/KSAdSDKAdapter (3.4.1):
+    - DomobSDK/DomobSDKAdapter
     - KSAdSDK (~> 3.3.61)
   - GMKsAdapter-Beta (3.3.64.0.0):
     - Ads-CN-Beta/CSJMediation (>= 6.2.0.0)
@@ -47,15 +31,14 @@ PODS:
   - SDWebImage/Core (5.19.4)
 
 DEPENDENCIES:
-  - DomobAdSDK (from `../`)
-  - DomobAdSDK/DomobSDKAdapter (from `../`)
-  - DomobAdSDK/GMAdSDKAdapter (from `../`)
-  - DomobAdSDK/KSAdSDKAdapter (from `../`)
+  - DomobSDK (from `../`)
+  - DomobSDK/DomobSDKAdapter (from `../`)
+  - DomobSDK/GMAdSDKAdapter (from `../`)
+  - DomobSDK/KSAdSDKAdapter (from `../`)
 
 SPEC REPOS:
   trunk:
     - Ads-CN-Beta
-    - AFNetworking
     - GMKsAdapter-Beta
     - KSAdSDK
     - Masonry
@@ -63,19 +46,18 @@ SPEC REPOS:
     - SDWebImage
 
 EXTERNAL SOURCES:
-  DomobAdSDK:
+  DomobSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
   Ads-CN-Beta: 7a82a9a84e5af6b37d78ea1364648f652df26020
-  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  DomobAdSDK: 25484008954a2026b3f730a4b1bd23c565c5f0b3
+  DomobSDK: ea571ecfee8663e66d529060d173e388c5521e24
   GMKsAdapter-Beta: 39a985c9e198fc449e47ae0f0cdea085973fdf3a
   KSAdSDK: 2b7d0715bb848a9f5b5cb46a5ae25555e109aca0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   Protobuf: fb2c13674723f76ff6eede14f78847a776455fa2
   SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
 
-PODFILE CHECKSUM: b8079edf4c7c0769e107e188dc47d11bc04e51fe
+PODFILE CHECKSUM: 6af71f52f607e5f0ec30fd8ec666bc6f4932bc2a
 
 COCOAPODS: 1.15.2

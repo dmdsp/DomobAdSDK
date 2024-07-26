@@ -10,7 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DMSplashAdDelegate;
-
 @interface DM_SplashAd : NSObject
 //广告位id
 @property (nonatomic, copy, readonly, nonnull) NSString *slotID;
@@ -20,6 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , copy ,readonly)NSArray  * winNoticeUrl ;
 //竞价失败地址
 @property (nonatomic , copy, readonly) NSArray * lnurl ;
+//开屏的view,如果有特殊需要可以直接展示
+@property (nonatomic, strong, readonly) UIView *dmSplashView;
+//使用controller present 落地页
+@property (nonatomic, strong) UIViewController *presentAdViewController;
+
 @property (nonatomic , copy) NSString * materialId ;
 
 /// 初始化开屏广告和配置代理
@@ -52,6 +56,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)splashAdDidClick:(DM_SplashAd *)splashAd;
 /// 广告被关闭
 - (void)splashAdDidClose:(DM_SplashAd *)splashAd;
-
+/// 广告详情页关闭回调
+- (void)splashAdDetailViewDidClose:(DM_SplashAd *)splashAd;
+/// 广告详情页将展示回调
+- (void)splashAdDetailViewDidPresentScreen:(DM_SplashAd *)splashAd;
 @end
 NS_ASSUME_NONNULL_END

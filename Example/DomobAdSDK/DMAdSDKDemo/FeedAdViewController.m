@@ -80,6 +80,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row==0) {
         self.feedAd = [[DM_FeedAd new] loadFeedAdTemplateAdWithSlotID:@"118171711352246" popupViewHidden:NO delegate:self];
+        self.feedAd.presentAdViewController = self;
     }else if (indexPath.row==1) {
         self.feedAd = [[DM_FeedAd new] loadFeedAdTemplateAdWithSlotID:@"118171711352246" popupViewHidden:NO delegate:self];
 
@@ -117,7 +118,6 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"feedAd加载成功--%@",_feedAd.materialId]
                 duration:3.0
                 position:CSToastPositionCenter];
-    
 }
 
 - (void)feedAdDidRender:(nonnull DM_FeedAd *)feedAd {
@@ -142,5 +142,20 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
                 duration:3.0
                 position:CSToastPositionCenter];
 }
-
+/// 广告详情页关闭回调
+- (void)feedAdDetailViewDidClose:(DM_FeedAd *)feedAd{
+    NSLog(@"feedAd广告详情页已经关闭");
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.view makeToast:[NSString stringWithFormat:@"feedAd广告详情页已经关闭--%@",feedAd.materialId]
+                                     duration:3.0
+                position:CSToastPositionCenter];
+}
+/// 广告详情页将展示回调
+- (void)feedAdDetailViewDidPresentScreen:(DM_FeedAd *)feedAd{
+    NSLog(@"feedAd广告详情页已经打开");
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.view makeToast:[NSString stringWithFormat:@"feedAd广告详情页已经打开--%@",feedAd.materialId]
+                                     duration:3.0
+                position:CSToastPositionCenter];
+}
 @end

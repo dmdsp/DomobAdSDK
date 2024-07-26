@@ -36,6 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) int32_t rewardVideoReqTimeout;
 /** 缓存池广告有效期,单位毫秒 */
 @property(nonatomic, assign) int32_t cacheValidity;
+
+@property(nonatomic, strong) NSMutableArray * adaptersArray;
+
 @end
 @interface DMUnionDspTrackerModel : NSObject
 @property(nonatomic, copy) NSString * unionAppid;

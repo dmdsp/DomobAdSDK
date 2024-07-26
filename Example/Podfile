@@ -3,9 +3,9 @@ use_frameworks!
 platform :ios, '12.0'
 
 target 'DomobAdSDK_Example' do
-  pod 'DomobAdSDK', :path => '../'
-  pod 'DomobAdSDK/DomobSDKAdapter', :path => '../'
-  pod 'DomobAdSDK/GMAdSDKAdapter', :path => '../'
-  pod 'DomobAdSDK/KSAdSDKAdapter', :path => '../'
+  pod 'DomobSDK', :path => '../'
+  pod 'DomobSDK/DomobSDKAdapter', :path => '../'
+  pod 'DomobSDK/GMAdSDKAdapter', :path => '../'
+  pod 'DomobSDK/KSAdSDKAdapter', :path => '../'
 
 end

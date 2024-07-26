@@ -14,7 +14,6 @@
 #import "RewardVideoAdViewController.h"
 
 #import "UIView+Toast.h"
-
 static NSString *cellWithIdentifier = @"cellWithIdentifier";
 
 @interface SplashAdViewController ()<UITableViewDelegate,UITableViewDataSource,DMSplashAdDelegate>
@@ -30,6 +29,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    [[DMAds shareInstance] setLocationDisable];
+//    [[DMAds shareInstance] setDebugMode:YES];
     [[DMAds shareInstance] initSDK];
     self.view.backgroundColor = [UIColor whiteColor];
     self.titleArr= @[[[DMAds shareInstance] getSdkVersion],@"开屏广告显示半屏",@"开屏广告显示全屏",@"信息流广告",@"模版渲染Banner广告",@"模版渲染插屏广告",@"模版渲染激励视频广告"];
@@ -103,11 +104,11 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 #pragma mark - 点击cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row==0) {
-       
 
     }else if (indexPath.row==1) {
         _isFull = NO;
         self.splashAd = [[DM_SplashAd new] loadSplashAdTemplateAdWithSlotID:@"118171711352274" adSize:CGSizeMake(0, [UIScreen mainScreen].bounds.size.height*0.75) delegate:self];
+//        self.splashAd.presentAdViewController = self;
     }else if (indexPath.row==2){
         _isFull = YES;
         self.splashAd = [[DM_SplashAd new] loadSplashAdTemplateAdWithSlotID:@"118171711352274" adSize:CGSizeMake(0, [UIScreen mainScreen].bounds.size.height*0.6) delegate:self];
@@ -162,7 +163,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     }
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     //然后展示
-    [self.splashAd showSplashViewInRootViewController:self];
+    [self.view addSubview:splashAd.dmSplashView];
+//    [self.splashAd showSplashViewInRootViewController:self];
 }
 /// 渲染失败
 /// - Parameter error: 错误信息
@@ -186,6 +188,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"splashAd广告已经点击--%@",_splashAd.materialId]
                                      duration:3.0
                 position:CSToastPositionCenter];
+//    [splashAd.dmSplashView removeFromSuperview];
 }
 //  广告被关闭
 - (void)splashAdDidClose:(DM_SplashAd *)splashAd{
@@ -197,6 +200,25 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"splashAd广告已经关闭--%@",_splashAd.materialId]
                                      duration:3.0
                 position:CSToastPositionCenter];
-}
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
+    NSString *dateString = [dateFormatter stringFromDate:currentDate];
+    NSLog(@"%@", dateString);
 
+}
+/// 广告详情页关闭回调
+- (void)splashAdDetailViewDidClose:(DM_SplashAd *)splashAd{
+    NSLog(@"splashAd广告详情页已经关闭");
+    [self.view makeToast:[NSString stringWithFormat:@"splashAd广告详情页已经关闭--%@",_splashAd.materialId]
+                                     duration:3.0
+                position:CSToastPositionCenter];
+}
+/// 广告详情页将展示回调
+- (void)splashAdDetailViewDidPresentScreen:(DM_SplashAd *)splashAd{
+    NSLog(@"splashAd广告详情页已经打开");
+    [self.view makeToast:[NSString stringWithFormat:@"splashAd广告详情页已经打开--%@",_splashAd.materialId]
+                                     duration:3.0
+                position:CSToastPositionCenter];
+}
 @end

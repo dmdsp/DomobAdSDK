@@ -80,6 +80,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row==0) {
         self.InterstitialAd = [[DM_InterstitialAd new] loadInterstitialAdTemplateAdWithSlotID:@"118171711352293"  delegate:self];
+        self.InterstitialAd.presentAdViewController = self;
+
     }else{
         self.InterstitialAd = [[DM_InterstitialAd new] loadInterstitialAdTemplateAdWithSlotID:@"118171711352293"  delegate:self];
     }

@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , copy ,readonly)NSArray  * winNoticeUrl ;
 //竞价失败地址
 @property (nonatomic , copy, readonly) NSArray * lnurl;
+//使用controller present 落地页
+@property (nonatomic, strong) UIViewController *presentAdViewController;
 @property (nonatomic , copy) NSString * materialId ;
 
 /// 初始化信息流广告和配置代理

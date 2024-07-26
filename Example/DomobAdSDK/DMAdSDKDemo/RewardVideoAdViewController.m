@@ -84,6 +84,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
         model.userId = @"123";
         model.rewardTime = 8;
         self.rewardVideoAd = [[DM_RewardVideoAd new] loadRewardVideoAdTemplateAdWithSlotID:@"118171711352679" withRewarVideoModel:model  delegate:self];
+        self.rewardVideoAd.presentAdViewController = self;
+
     }else{
         DM_RewarVideoModel * model = [DM_RewarVideoModel new];
         model.userId = @"321";

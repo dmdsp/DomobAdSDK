@@ -9,6 +9,7 @@
 
 @protocol DMFeedAdDelegate;
 @class DM_FeedView;
+@class DM_ADModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DM_FeedAd : NSObject
@@ -22,7 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , copy, readonly) NSArray * lnurl;
 //广告视图
 @property (nonatomic,strong) DM_FeedView *feedView;
+//使用controller present 落地页
+@property (nonatomic, strong) UIViewController *presentAdViewController;
+
 @property (nonatomic , copy) NSString * materialId ;
+//用于处理自渲染时的数据模型
+@property (nonatomic,strong) DM_ADModel *feedModel;
 
 
 /// 初始化信息流广告和配置代理
@@ -52,7 +58,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)feedAdDidClick:(DM_FeedAd *)feedAd;
 /// 广告被关闭
 - (void)feedAdDidClose:(DM_FeedAd *)feedAd;
-
+/// 广告详情页关闭回调
+- (void)feedAdDetailViewDidClose:(DM_FeedAd *)feedAd;
+/// 广告详情页将展示回调
+- (void)feedAdDetailViewDidPresentScreen:(DM_FeedAd *)feedAd;
 @end
 
 NS_ASSUME_NONNULL_END

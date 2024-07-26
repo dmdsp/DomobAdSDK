@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , copy, readonly) NSArray * lnurl;
 //banner视图
 @property (nonatomic,strong) DM_BannerView *bannerView;
+//使用controller present 落地页
+@property (nonatomic, strong) UIViewController *presentAdViewController;
+
 @property (nonatomic , copy) NSString * materialId ;
 
 
