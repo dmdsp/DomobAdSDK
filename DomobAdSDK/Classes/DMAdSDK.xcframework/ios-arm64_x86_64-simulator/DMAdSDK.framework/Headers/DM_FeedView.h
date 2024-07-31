@@ -63,6 +63,8 @@ typedef void(^DetailViewDidPresentScreen)(void);
 @property (nonatomic, copy) DetailViewDidPresentScreen detailViewDidPresentScreen;
 
 -(instancetype)initWithFeedAdTemplate:(DMFeedAdTemplate)adTemplate;
+//关闭摇一摇功能
+-(void)turnOffShake;
 
 @end
 

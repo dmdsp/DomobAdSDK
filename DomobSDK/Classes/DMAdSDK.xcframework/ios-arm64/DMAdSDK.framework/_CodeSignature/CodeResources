@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/Pods_DMAd.framework/Pods_DMAd</key>
 		<data>
-		vgU+uaB/mwuI1NqQC+PLw7yhVXM=
+		kF+KE26fQURL6kUWa/76heOiKbA=
 		</data>
 		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/DM_FeedView.h</key>
 		<data>
-		vJTmNbnGLxdT2HJmWWZJNec7JXQ=
+		EehhgHvK3KeRTz+lUjBkc3V2VKg=
 		</data>
 		<key>Headers/DM_InterstitialAd.h</key>
 		<data>
@@ -94,11 +94,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vgU+uaB/mwuI1NqQC+PLw7yhVXM=
+			kF+KE26fQURL6kUWa/76heOiKbA=
 			</data>
 			<key>hash2</key>
 			<data>
-			essVZt7S4haP0d1uw8KPNrkBAmCwinisvyWNLyN9E4M=
+			YjHFDgUcEI5v/vJs5ejAEVZy318jyXyX4J3sAB26cdg=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
@@ -193,11 +193,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vJTmNbnGLxdT2HJmWWZJNec7JXQ=
+			EehhgHvK3KeRTz+lUjBkc3V2VKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			T05uNQEMfQq9xTn7r/98QT+yx2cMgurCoZo3r9uyIb0=
+			Hbjq8qO5d41WqslGW0aOclEy++5N+lZqbV4fLe7eQvE=
 			</data>
 		</dict>
 		<key>Headers/DM_InterstitialAd.h</key>
