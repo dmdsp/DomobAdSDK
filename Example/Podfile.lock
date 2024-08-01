@@ -4,21 +4,21 @@ PODS:
   - Ads-CN-Beta/BUAdSDK (6.2.0.0)
   - Ads-CN-Beta/CSJMediation (6.2.0.0):
     - Ads-CN-Beta/BUAdSDK
-  - DomobSDK (3.4.3):
-    - DomobSDK/DMAdSDK (= 3.4.3)
-  - DomobSDK/DMAdSDK (3.4.3):
+  - DomobSDK (3.4.4):
+    - DomobSDK/DMAdSDK (= 3.4.4)
+  - DomobSDK/DMAdSDK (3.4.4):
     - Masonry
     - Protobuf (~> 3.27)
     - SDWebImage
-  - DomobSDK/DomobSDKAdapter (3.4.3):
+  - DomobSDK/DomobSDKAdapter (3.4.4):
     - DomobSDK/DMAdSDK
-  - DomobSDK/GMAdSDKAdapter (3.4.3):
+  - DomobSDK/GMAdSDKAdapter (3.4.4):
     - Ads-CN-Beta (= 6.2.0.0)
     - Ads-CN-Beta/CSJMediation
     - DomobSDK/DomobSDKAdapter
     - GMKsAdapter-Beta (~> 3.3.64.0.0)
     - KSAdSDK (~> 3.3.61)
-  - DomobSDK/KSAdSDKAdapter (3.4.3):
+  - DomobSDK/KSAdSDKAdapter (3.4.4):
     - DomobSDK/DomobSDKAdapter
     - KSAdSDK (~> 3.3.61)
   - GMKsAdapter-Beta (3.3.64.0.0):
@@ -51,7 +51,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Ads-CN-Beta: 7a82a9a84e5af6b37d78ea1364648f652df26020
-  DomobSDK: 38a3780e71202a6b43fd8958b06abc9e0621cd49
+  DomobSDK: 87d0424965fed956462205fa52af93133103e39b
   GMKsAdapter-Beta: 39a985c9e198fc449e47ae0f0cdea085973fdf3a
   KSAdSDK: 2b7d0715bb848a9f5b5cb46a5ae25555e109aca0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201

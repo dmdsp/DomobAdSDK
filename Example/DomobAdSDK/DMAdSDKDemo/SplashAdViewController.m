@@ -155,6 +155,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 /// 渲染成功
 - (void)splashAdDidRender:(DM_SplashAd*)splashAd;{
     // 自定义底部视图
+    NSLog(@"%@",[[DMAds shareInstance] getSdkDevice]);
     [self.view makeToast:@"splashAd渲染成功"
                                      duration:3.0
                 position:CSToastPositionCenter];
