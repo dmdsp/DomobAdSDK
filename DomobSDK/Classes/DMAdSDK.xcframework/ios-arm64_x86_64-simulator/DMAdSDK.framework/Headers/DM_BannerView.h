@@ -22,6 +22,8 @@ typedef NS_ENUM(NSInteger, DMBannerAdTemplate) {
 typedef void(^ClickLinkEvent)(void);
 typedef void(^ClickCloseEvent)(void);
 typedef void(^DidShowEvent)(void);
+typedef void(^DetailViewDidClose)(void);
+typedef void(^DetailViewDidPresentScreen)(void);
 
 @interface DM_BannerView : UIView
 //背景image
@@ -40,6 +42,8 @@ typedef void(^DidShowEvent)(void);
 @property (nonatomic, copy) ClickLinkEvent linkEvent;
 @property (nonatomic, copy) ClickCloseEvent closeEvent;
 @property (nonatomic, copy) DidShowEvent showEvent;
+@property (nonatomic, copy) DetailViewDidClose detailViewDidClose;
+@property (nonatomic, copy) DetailViewDidPresentScreen detailViewDidPresentScreen;
 
 -(instancetype)initWithBannerAdTemplate:(DMBannerAdTemplate)adTemplate;
 

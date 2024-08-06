@@ -55,6 +55,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)bannerAdDidClick:(DM_BannerAd *)bannerAd;
 /// 广告被关闭
 - (void)bannerAdDidClose:(DM_BannerAd *)bannerAd;
+/// 广告详情页关闭回调
+- (void)bannerAdDetailViewDidClose:(DM_BannerAd *)bannerAd;
+/// 广告详情页将展示回调
+- (void)bannerAdDetailViewDidPresentScreen:(DM_BannerAd *)bannerAd;
 
 @end
 

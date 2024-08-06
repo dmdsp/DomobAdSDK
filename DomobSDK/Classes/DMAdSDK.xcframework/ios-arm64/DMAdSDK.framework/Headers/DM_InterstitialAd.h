@@ -53,7 +53,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)interstitialAdDidClick:(DM_InterstitialAd *)interstitialAd;
 /// 广告被关闭
 - (void)interstitialAdDidClose:(DM_InterstitialAd *)interstitialAd;
-
+/// 广告详情页关闭回调
+- (void)interstitialAdDetailViewDidClose:(DM_InterstitialAd *)interstitialAd;
+/// 广告详情页将展示回调
+- (void)interstitialAdDetailViewDidPresentScreen:(DM_InterstitialAd *)interstitialAd;
 @end
 
 NS_ASSUME_NONNULL_END

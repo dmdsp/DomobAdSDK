@@ -66,6 +66,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)rewardVideoAdDidComplete:(DM_RewardVideoAd *)rewardVideoAd;
 ///视频播放完成
 - (void)rewardVideoAdPlayToEndTime:(DM_RewardVideoAd *)rewardVideoAd;
+/// 广告详情页关闭回调
+- (void)rewardVideoAdDetailViewDidClose:(DM_RewardVideoAd *)rewardVideoAd;
+/// 广告详情页将展示回调
+- (void)rewardVideoAdDetailViewDidPresentScreen:(DM_RewardVideoAd *)rewardVideoAd;
 @end
 
 NS_ASSUME_NONNULL_END
