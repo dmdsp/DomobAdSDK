@@ -25,7 +25,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 @property (nonatomic, strong) UITableView *listTable;
 @property (nonatomic, copy) NSArray *titleArr;
 @property (nonatomic, strong) DM_RewardVideoAd * rewardVideoAd;
-
+@property (nonatomic, assign) int showCount;
+@property (nonatomic, assign) int clickCount;
 @end
 
 @implementation RewardVideoAdViewController
@@ -33,7 +34,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:242/255.0 blue:245/255.0 alpha:1.0];;
-    self.titleArr= @[@"激励视频--横版",@"激励视频--竖版"];
+    self.titleArr= @[@"激励视频--横版",@"激励视频--竖版",@"激励视频--竖版",@"激励视频--竖版"];
     [self.view addSubview:self.listTable];
     
 }
@@ -71,8 +72,13 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     cell.contentView.backgroundColor = [UIColor colorWithRed:240/255.0 green:242/255.0 blue:245/255.0 alpha:1.0];
     cell.textLabel.textColor=[UIColor blackColor];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = self.titleArr[indexPath.row];
-    return cell ;
+    if (indexPath.row == 2) {
+        cell.textLabel.text = [NSString stringWithFormat:@"曝光-%d-次",_showCount];
+    }else if (indexPath.row == 3){
+        cell.textLabel.text = [NSString stringWithFormat:@"点击-%d-次",_clickCount];
+    }else{
+        cell.textLabel.text = self.titleArr[indexPath.row];
+    }    return cell ;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 40;
@@ -95,6 +101,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 }
 #pragma  ---DMRewardVideoAdDelegate
 - (void)rewardVideoAdDidClick:(nonnull DM_RewardVideoAd *)rewardVideoAd {
+    _clickCount++;
+    [self.listTable reloadData];
     [self.view makeToast:[NSString stringWithFormat:@"rewardVideoAd被点击--%@",_rewardVideoAd.materialId]
                 duration:3.0
                 position:CSToastPositionCenter];
@@ -132,6 +140,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 }
 
 - (void)rewardVideoAdDidShow:(nonnull DM_RewardVideoAd *)rewardVideoAd {
+    _showCount++;
+    [self.listTable reloadData];
     [self.view makeToast:[NSString stringWithFormat:@"rewardVideoAd已经开始展示--%@",_rewardVideoAd.materialId]
                 duration:3.0
                 position:CSToastPositionCenter];

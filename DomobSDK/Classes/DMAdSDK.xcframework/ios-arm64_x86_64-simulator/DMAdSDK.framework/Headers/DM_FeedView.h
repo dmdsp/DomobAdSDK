@@ -32,6 +32,15 @@ typedef void(^DetailViewDidClose)(void);
 typedef void(^DetailViewDidPresentScreen)(void);
 
 @interface DM_FeedView : UIView
+
+@property (nonatomic, assign) CGPoint startScreenPoint;
+@property (nonatomic, assign) CGPoint endScreenPoint;
+@property (nonatomic, assign) CGPoint startViewPoint;
+@property (nonatomic, assign) CGPoint endViewPoint;
+@property(nonatomic,assign) int sensitivity;
+//是否是从摇一摇来的点击
+@property (nonatomic, assign) bool isFromShake;
+
 //背景view
 @property (nonatomic, strong) UIView *bgView;
 //背景image
@@ -65,7 +74,8 @@ typedef void(^DetailViewDidPresentScreen)(void);
 -(instancetype)initWithFeedAdTemplate:(DMFeedAdTemplate)adTemplate;
 //关闭摇一摇功能
 -(void)turnOffShake;
-
+//关闭当前view
+- (void)dismissADView;
 @end
 
 NS_ASSUME_NONNULL_END

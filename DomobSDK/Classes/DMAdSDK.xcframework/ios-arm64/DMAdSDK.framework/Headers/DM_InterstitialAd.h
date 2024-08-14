@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 //使用controller present 落地页
 @property (nonatomic, strong) UIViewController *presentAdViewController;
 @property (nonatomic , copy) NSString * materialId ;
+@property (nonatomic , copy) NSString * rid ;
 
 /// 初始化信息流广告和配置代理
 /// - Parameter delegate: 代理

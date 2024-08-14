@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIViewController *presentAdViewController;
 
 @property (nonatomic , copy) NSString * materialId ;
+@property (nonatomic , copy) NSString * rid ;
 
 
 /// 初始化banner广告和配置代理

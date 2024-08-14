@@ -24,15 +24,18 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 @property (nonatomic, strong) UITableView *listTable;
 @property (nonatomic, copy) NSArray *titleArr;
 @property (nonatomic, strong) DM_InterstitialAd * InterstitialAd;
-
+@property (nonatomic, assign) int showCount;
+@property (nonatomic, assign) int clickCount;
 @end
 
 @implementation InterstitialAdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _showCount = 0;
+    _clickCount = 0;
     self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:242/255.0 blue:245/255.0 alpha:1.0];;
-    self.titleArr= @[@"模版渲染interstitial"];
+    self.titleArr= @[@"模版渲染interstitial",@"模版渲染interstitial",@"模版渲染interstitial"];
     [self.view addSubview:self.listTable];
     
 }
@@ -70,8 +73,13 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     cell.contentView.backgroundColor = [UIColor colorWithRed:240/255.0 green:242/255.0 blue:245/255.0 alpha:1.0];
     cell.textLabel.textColor=[UIColor blackColor];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = self.titleArr[indexPath.row];
-    return cell ;
+    if (indexPath.row == 1) {
+        cell.textLabel.text = [NSString stringWithFormat:@"曝光-%d-次",_showCount];
+    }else if (indexPath.row == 2){
+        cell.textLabel.text = [NSString stringWithFormat:@"点击-%d-次",_clickCount];
+    }else{
+        cell.textLabel.text = self.titleArr[indexPath.row];
+    }    return cell ;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 40;
@@ -91,6 +99,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"InterstitialAd被点击--%@",_InterstitialAd.materialId]
                 duration:3.0
                 position:CSToastPositionCenter];
+    _clickCount++;
+    [self.listTable reloadData];
 }
 - (void)interstitialAdDidFailToLoadWithError:(nonnull NSError *)error {
     [self.view makeToast:[NSString stringWithFormat:@"InterstitialAd加载失败--%@",_InterstitialAd.materialId]
@@ -128,6 +138,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"InterstitialAd已经开始展示--%@",_InterstitialAd.materialId]
                 duration:3.0
                 position:CSToastPositionCenter];
+    _showCount++;
+    [self.listTable reloadData];
 }
 /// 广告被关闭
 - (void)interstitialAdDidClose:(DM_InterstitialAd *)InterstitialAd{

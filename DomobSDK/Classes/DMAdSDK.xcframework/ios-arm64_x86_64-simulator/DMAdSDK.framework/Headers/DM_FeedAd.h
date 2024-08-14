@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , copy) NSString * materialId ;
 //用于处理自渲染时的数据模型
 @property (nonatomic,strong) DM_ADModel *feedModel;
+@property (nonatomic , copy) NSString * rid ;
 
 
 /// 初始化信息流广告和配置代理

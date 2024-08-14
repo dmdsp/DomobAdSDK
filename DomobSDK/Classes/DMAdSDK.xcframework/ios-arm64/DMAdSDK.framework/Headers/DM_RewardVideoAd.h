@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (nonatomic , copy) NSString * materialId ;
+@property (nonatomic , copy) NSString * rid ;
 
 /// 初始化激励视频和配置、代理
 /// - Parameter delegate: 代理

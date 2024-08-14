@@ -23,6 +23,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 @property (nonatomic, strong) DM_SplashAd * splashAd;
 @property (nonatomic, strong) UIImageView * bottomView;
 @property (nonatomic, strong) UITextView *textView;
+@property (nonatomic, assign) int showCount;
+@property (nonatomic, assign) int clickCount;
 @end
 
 @implementation SplashAdViewController
@@ -33,7 +35,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 //    [[DMAds shareInstance] setDebugMode:YES];
     [[DMAds shareInstance] initSDK];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.titleArr= @[[[DMAds shareInstance] getSdkVersion],@"开屏广告显示半屏",@"开屏广告显示全屏",@"信息流广告",@"模版渲染Banner广告",@"模版渲染插屏广告",@"模版渲染激励视频广告"];
+    self.titleArr= @[[[DMAds shareInstance] getSdkVersion],@"开屏广告显示半屏",@"开屏广告显示全屏",@"信息流广告",@"模版渲染Banner广告",@"模版渲染插屏广告",@"模版渲染激励视频广告",@"曝光次数",@"点击次数"];
     [self.view addSubview:self.listTable];
     [self.view addSubview:self.textView];
 }
@@ -91,6 +93,10 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
         cell.textLabel.text = [NSString stringWithFormat:@"SDK版本号-%@",[[DMAds shareInstance] getSdkVersion]];
         cell.textLabel.textColor=[UIColor redColor];
 
+    }else if (indexPath.row == 7) {
+        cell.textLabel.text = [NSString stringWithFormat:@"曝光-%d-次",_showCount];
+    }else if (indexPath.row == 8){
+        cell.textLabel.text = [NSString stringWithFormat:@"点击-%d-次",_clickCount];
     }else{
         cell.textLabel.textColor=[UIColor blackColor];
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
@@ -104,11 +110,13 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 #pragma mark - 点击cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row==0) {
-
+        
     }else if (indexPath.row==1) {
         _isFull = NO;
-        self.splashAd = [[DM_SplashAd new] loadSplashAdTemplateAdWithSlotID:@"118171711352274" adSize:CGSizeMake(0, [UIScreen mainScreen].bounds.size.height*0.75) delegate:self];
-//        self.splashAd.presentAdViewController = self;
+        self.splashAd = [DM_SplashAd new] ;
+        self.splashAd.rid = @"123";
+        [self.splashAd loadSplashAdTemplateAdWithSlotID:@"118171711352274" adSize:CGSizeMake(0, [UIScreen mainScreen].bounds.size.height*0.75) delegate:self];
+        //        self.splashAd.presentAdViewController = self;
     }else if (indexPath.row==2){
         _isFull = YES;
         self.splashAd = [[DM_SplashAd new] loadSplashAdTemplateAdWithSlotID:@"118171711352274" adSize:CGSizeMake(0, [UIScreen mainScreen].bounds.size.height*0.6) delegate:self];
@@ -182,6 +190,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"plashAd广告已经打开--%@",_splashAd.materialId]
                                      duration:3.0
                 position:CSToastPositionCenter];
+    _showCount++;
+    [self.listTable reloadData];
 }
 //  广告被点击
 - (void)splashAdDidClick:(DM_SplashAd *)splashAd{
@@ -189,6 +199,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"splashAd广告已经点击--%@",_splashAd.materialId]
                                      duration:3.0
                 position:CSToastPositionCenter];
+    _clickCount++;
+    [self.listTable reloadData];
 //    [splashAd.dmSplashView removeFromSuperview];
 }
 //  广告被关闭
@@ -201,11 +213,6 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"splashAd广告已经关闭--%@",_splashAd.materialId]
                                      duration:3.0
                 position:CSToastPositionCenter];
-    NSDate *currentDate = [NSDate date];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
-    NSString *dateString = [dateFormatter stringFromDate:currentDate];
-    NSLog(@"%@", dateString);
 
 }
 /// 广告详情页关闭回调

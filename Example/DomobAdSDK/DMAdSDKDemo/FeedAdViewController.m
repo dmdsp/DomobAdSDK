@@ -25,14 +25,20 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 @property (nonatomic, copy) NSArray *titleArr;
 @property (nonatomic, strong) DM_FeedAd * feedAd;
 
+@property (nonatomic, assign) int showCount;
+@property (nonatomic, assign) int clickCount;
+
+
 @end
 
 @implementation FeedAdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _showCount = 0;
+    _clickCount = 0;
     self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:242/255.0 blue:245/255.0 alpha:1.0];;
-    self.titleArr= @[@"上图下文",@"上文下图",@"左图右文",@"左文右图",@"自渲染信息流",@"隐藏弹出视图"];
+    self.titleArr= @[@"上图下文",@"上文下图",@"左图右文",@"左文右图",@"自渲染信息流",@"隐藏弹出视图",@"隐藏弹出视图",@"隐藏弹出视图"];
     [self.view addSubview:self.listTable];
     
 }
@@ -70,7 +76,13 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     cell.contentView.backgroundColor = [UIColor colorWithRed:240/255.0 green:242/255.0 blue:245/255.0 alpha:1.0];
     cell.textLabel.textColor=[UIColor blackColor];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = self.titleArr[indexPath.row];
+    if (indexPath.row == 6) {
+        cell.textLabel.text = [NSString stringWithFormat:@"曝光-%d-次",_showCount];
+    }else if (indexPath.row == 7){
+        cell.textLabel.text = [NSString stringWithFormat:@"点击-%d-次",_clickCount];
+    }else{
+        cell.textLabel.text = self.titleArr[indexPath.row];
+    }
     return cell ;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -99,6 +111,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"feedAd被点击--%@",_feedAd.materialId]
                 duration:3.0
                 position:CSToastPositionCenter];
+    _clickCount++;
+    [self.listTable reloadData];
 }
 - (void)feedAdDidFailToLoadWithError:(nonnull NSError *)error {
     [self.view makeToast:[NSString stringWithFormat:@"feedAd加载失败--%@",_feedAd.materialId]
@@ -128,6 +142,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     //可以将view展示在当前的视图上
     self.feedAd = feedAd;
     self.feedAd.feedView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height/2, self.feedAd.feedView.bounds.size.width, self.feedAd.feedView.bounds.size.height);
+    [self.feedAd.feedView turnOffShake];
     [self.view addSubview:self.feedAd.feedView];
 }
 
@@ -135,6 +150,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     [self.view makeToast:[NSString stringWithFormat:@"feedAd已经开始展示--%@",_feedAd.materialId]
                 duration:3.0
                 position:CSToastPositionCenter];
+    _showCount++;
+    [self.listTable reloadData];
 }
 /// 广告被关闭
 - (void)feedAdDidClose:(DM_FeedAd *)feedAd{

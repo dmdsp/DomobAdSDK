@@ -44,9 +44,13 @@ typedef void(^DetailViewDidPresentScreen)(void);
 @property (nonatomic, copy) DidShowEvent showEvent;
 @property (nonatomic, copy) DetailViewDidClose detailViewDidClose;
 @property (nonatomic, copy) DetailViewDidPresentScreen detailViewDidPresentScreen;
-
+@property (nonatomic, assign) CGPoint startScreenPoint;
+@property (nonatomic, assign) CGPoint endScreenPoint;
+@property (nonatomic, assign) CGPoint startViewPoint;
+@property (nonatomic, assign) CGPoint endViewPoint;
 -(instancetype)initWithBannerAdTemplate:(DMBannerAdTemplate)adTemplate;
-
+//关闭当前view
+- (void)dismissADView;
 @end
 
 NS_ASSUME_NONNULL_END
