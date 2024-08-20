@@ -142,7 +142,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     //可以将view展示在当前的视图上
     self.feedAd = feedAd;
     self.feedAd.feedView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height/2, self.feedAd.feedView.bounds.size.width, self.feedAd.feedView.bounds.size.height);
-    [self.feedAd.feedView turnOffShake];
+//    [self.feedAd.feedView turnOffShake];
     [self.view addSubview:self.feedAd.feedView];
 }
 

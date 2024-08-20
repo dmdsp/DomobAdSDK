@@ -344,7 +344,7 @@
 				ORGANIZATIONNAME = dmdsp;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 432Y475BJD;
+						DevelopmentTeam = J392M2H9CQ;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -637,7 +637,7 @@
 			baseConfigurationReference = E161851CA04670E32D2B9E31 /* Pods-DomobAdSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 432Y475BJD;
+				DEVELOPMENT_TEAM = J392M2H9CQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DomobAdSDK/DomobAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "DomobAdSDK/DomobAdSDK-Info.plist";
@@ -655,7 +655,7 @@
 			baseConfigurationReference = 2C511BEF43B31E4B743A22DE /* Pods-DomobAdSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 432Y475BJD;
+				DEVELOPMENT_TEAM = J392M2H9CQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DomobAdSDK/DomobAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "DomobAdSDK/DomobAdSDK-Info.plist";
