@@ -1,6 +1,0 @@
-framework module GMAdSDKAdapter {
-  umbrella header "GMAdSDKAdapter.h"
-  export *
-
-  module * { export * }
-}

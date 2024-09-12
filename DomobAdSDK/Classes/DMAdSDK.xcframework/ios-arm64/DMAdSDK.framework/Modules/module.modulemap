@@ -1,6 +1,0 @@
-framework module DMAdSDK {
-  umbrella header "DMAdSDK.h"
-  export *
-
-  module * { export * }
-}
