@@ -30,10 +30,10 @@ typedef void(^DetailViewDidPresentScreen)(void);
 @property (nonatomic, strong) UIImageView *adImageView;
 
 @property (nonatomic, strong) DM_ADModel *adModel;
-@property (nonatomic, strong) UIViewController *presentAdViewController;
+@property (nonatomic, weak) UIViewController *presentAdViewController;
 
 //广告
-@property (nonatomic, strong) UILabel *adLab;
+@property (nonatomic, strong) UIButton*adBtn;
 //关闭按钮
 @property (nonatomic, strong) UIButton *closeBtn;
 //当前的渲染模版

@@ -54,6 +54,12 @@ typedef void(^CompletionEvent)(BOOL success);
 ///  设置调试模式,上线前请关闭.
 /// - Parameter debugMode: 如果想获得测试广告请传Yes,默认为No,
 - (void)setDebugMode:(BOOL)debugMode;
+/// 有多个版本就多次调用
+/// - Parameters:
+///   - ver: 20220111
+///   - dmid: 3d4a248acd6da80677471bee20e11bad
+- (void)addVer:(NSString *)ver withDmid:(NSString *)dmid;
+
 @end
 
 NS_ASSUME_NONNULL_END

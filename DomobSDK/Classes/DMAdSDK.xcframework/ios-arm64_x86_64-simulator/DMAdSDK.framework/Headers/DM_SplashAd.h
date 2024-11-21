@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 //开屏的view,如果有特殊需要可以直接展示
 @property (nonatomic, strong, readonly) UIView *dmSplashView;
 //使用controller present 落地页
-@property (nonatomic, strong) UIViewController *presentAdViewController;
+@property (nonatomic, weak) UIViewController *presentAdViewController;
 
 @property (nonatomic , copy) NSString * materialId ;
 @property (nonatomic , copy) NSString * rid ;

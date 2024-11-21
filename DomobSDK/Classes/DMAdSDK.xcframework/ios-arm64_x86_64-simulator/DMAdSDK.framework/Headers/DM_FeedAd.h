@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 //广告视图
 @property (nonatomic,strong) DM_FeedView *feedView;
 //使用controller present 落地页
-@property (nonatomic, strong) UIViewController *presentAdViewController;
+@property (nonatomic, weak) UIViewController *presentAdViewController;
 
 @property (nonatomic , copy) NSString * materialId ;
 //用于处理自渲染时的数据模型

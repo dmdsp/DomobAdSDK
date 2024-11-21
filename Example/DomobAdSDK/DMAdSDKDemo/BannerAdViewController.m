@@ -136,10 +136,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     self.bannerAd.bannerView.backgroundColor = [UIColor whiteColor];
     self.bannerAd.bannerView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height/2, self.bannerAd.bannerView.bounds.size.width, self.bannerAd.bannerView.bounds.size.height);
     if (self.bannerAd.bannerView.adTemplate == DMBannerAdTemplateCustom) {
-        self.bannerAd.bannerView.adLab.text = @"123";
         self.bannerAd.bannerView.closeBtn.hidden = YES;
         self.bannerAd.bannerView.adImageView.frame = self.bannerAd.bannerView.bounds;
-        self.bannerAd.bannerView.adLab.frame = CGRectMake(50, 50, 100, 40);
     }
 
     

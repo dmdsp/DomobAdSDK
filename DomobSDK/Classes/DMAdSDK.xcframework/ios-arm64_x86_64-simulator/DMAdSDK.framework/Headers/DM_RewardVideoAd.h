@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 //加载广告时的model
 @property (nonatomic , strong, readonly) DM_RewarVideoModel * videoModel ;
 //使用controller present 落地页
-@property (nonatomic, strong) UIViewController *presentAdViewController;
+@property (nonatomic, weak) UIViewController *presentAdViewController;
 
 
 @property (nonatomic , copy) NSString * materialId ;

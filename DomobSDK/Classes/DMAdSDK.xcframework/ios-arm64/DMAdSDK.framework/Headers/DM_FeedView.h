@@ -51,7 +51,7 @@ typedef void(^DetailViewDidPresentScreen)(void);
 //查看详情按钮
 @property (nonatomic, strong) UIButton *jumpBtn;
 //广告
-@property (nonatomic, strong) UILabel *adLab;
+@property (nonatomic, strong) UIButton*adBtn;
 //标题
 @property (nonatomic, strong) UILabel *titleLab;
 //关闭按钮
@@ -62,7 +62,7 @@ typedef void(^DetailViewDidPresentScreen)(void);
 @property (nonatomic, strong) UILabel *appLab;
 //当前的渲染模版
 @property (nonatomic, assign) DMFeedAdTemplate adTemplate;
-@property (nonatomic, strong) UIViewController *presentAdViewController;
+@property (nonatomic, weak) UIViewController *presentAdViewController;
 
 
 @property (nonatomic, copy) ClickLinkEvent linkEvent;
@@ -72,8 +72,6 @@ typedef void(^DetailViewDidPresentScreen)(void);
 @property (nonatomic, copy) DetailViewDidPresentScreen detailViewDidPresentScreen;
 
 -(instancetype)initWithFeedAdTemplate:(DMFeedAdTemplate)adTemplate;
-//关闭摇一摇功能
--(void)turnOffShake;
 //关闭当前view
 - (void)dismissADView;
 @end

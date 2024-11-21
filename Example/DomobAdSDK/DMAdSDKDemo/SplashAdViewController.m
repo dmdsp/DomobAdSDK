@@ -34,6 +34,8 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 //    [[DMAds shareInstance] setLocationDisable];
 //    [[DMAds shareInstance] setDebugMode:YES];
     [[DMAds shareInstance] initSDK];
+    [[DMAds shareInstance] addVer:@"20220111" withDmid:@"3d4a248acd6da80677471bee20e11bad"];
+    [[DMAds shareInstance] addVer:@"20230330" withDmid:@"7e8909f412708ca22739a8a81df96252"];
     self.view.backgroundColor = [UIColor whiteColor];
     self.titleArr= @[[[DMAds shareInstance] getSdkVersion],@"开屏广告显示半屏",@"开屏广告显示全屏",@"信息流广告",@"模版渲染Banner广告",@"模版渲染插屏广告",@"模版渲染激励视频广告",@"曝光次数",@"点击次数"];
     [self.view addSubview:self.listTable];
