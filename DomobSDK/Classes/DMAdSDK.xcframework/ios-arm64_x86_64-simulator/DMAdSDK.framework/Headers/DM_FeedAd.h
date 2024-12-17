@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , copy, readonly) NSArray * lnurl;
 //广告视图
 @property (nonatomic,strong) DM_FeedView *feedView;
+//懒加载的方式移除了feedView的子控件,请在feedAdDidRender后获取
+@property (nonatomic,strong) DM_FeedView *registerView;
+
 //使用controller present 落地页
 @property (nonatomic, weak) UIViewController *presentAdViewController;
 

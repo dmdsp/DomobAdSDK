@@ -74,6 +74,11 @@ typedef void(^DetailViewDidPresentScreen)(void);
 -(instancetype)initWithFeedAdTemplate:(DMFeedAdTemplate)adTemplate;
 //关闭当前view
 - (void)dismissADView;
+//注册点击事件,如果未调用或者数组为空将默认整个view可以点击
+- (void)registerClickableViews:(NSArray<__kindof UIView *> *_Nullable)clickableViews;
+//移除点击
+- (void)removeClickableViews;
+
 @end
 
 NS_ASSUME_NONNULL_END

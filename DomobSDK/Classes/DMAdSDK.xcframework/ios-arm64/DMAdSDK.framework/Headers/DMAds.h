@@ -30,6 +30,11 @@ typedef NS_ENUM(NSInteger, AdTemplateId) {
     AdTemplateIdRewardVideoLand = 70001, // 激励视频-横屏
     AdTemplateIdRewardVideoPort = 10002 // 激励视频-竖屏
 };
+typedef NS_ENUM(NSInteger, DMAdCloseType) {
+    DMAdCloseTypeSkipButton,   // 点击跳过关闭
+    DMAdCloseTypeDetailButton,  // 点击详情之后关闭
+    DMAdCloseTypeAutoClose      // 自动关闭
+};
 typedef void(^CompletionEvent)(BOOL success);
 @class DMUnionModel;
 @class DMUnionTrackerModel;

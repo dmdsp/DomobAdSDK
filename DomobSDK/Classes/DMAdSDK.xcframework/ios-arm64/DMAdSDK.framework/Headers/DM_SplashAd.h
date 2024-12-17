@@ -26,7 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic , copy) NSString * materialId ;
 @property (nonatomic , copy) NSString * rid ;
-
+//广告的关闭类型
+@property (nonatomic, assign) DMAdCloseType adCloseType;
 /// 初始化开屏广告和配置代理
 /// - Parameter delegate: 代理
 /// - Parameter slotID: 广告位id

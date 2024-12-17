@@ -79,4 +79,13 @@
 @property (nonatomic, assign) bool isHidden;
 //dspId
 @property (nonatomic, assign) int dspId;
+/** 素材尺寸宽度 */
+@property(nonatomic, assign) int32_t width;
+
+/** 素材尺寸高度 */
+@property(nonatomic, assign) int32_t height;
+
+/** 视频时长，单位毫秒 */
+@property(nonatomic, assign) int32_t videoDuration;
+
 @end
