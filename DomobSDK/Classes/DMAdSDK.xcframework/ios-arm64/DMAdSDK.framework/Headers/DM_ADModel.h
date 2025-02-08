@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class NewTargetOption;
+
 @interface DM_ADModel : NSObject
 /**
  广告资源的链接
@@ -87,5 +89,7 @@
 
 /** 视频时长，单位毫秒 */
 @property(nonatomic, assign) int32_t videoDuration;
+
+@property(nonatomic, strong) NewTargetOption * option;
 
 @end
