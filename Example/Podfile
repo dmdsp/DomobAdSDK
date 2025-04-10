@@ -7,5 +7,6 @@ target 'DomobAdSDK_Example' do
   pod 'DomobSDK/DomobSDKAdapter', :path => '../'
   pod 'DomobSDK/GMAdSDKAdapter', :path => '../'
   pod 'DomobSDK/KSAdSDKAdapter', :path => '../'
+  pod 'AnyThinkiOS','6.3.61'
 
 end

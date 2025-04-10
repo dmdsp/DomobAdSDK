@@ -8,6 +8,7 @@
 #import "DMViewController.h"
 #import "SplashAdViewController.h"
 #import "SplashAdapterViewController.h"
+#import "ToponSplashViewController.h"
 
 
 static NSString *cellWithIdentifier = @"cellWithIdentifier";
@@ -23,7 +24,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.titleArr= @[@"多盟国内SDK",@"多盟聚合SDK"];
+    self.titleArr= @[@"多盟国内SDK",@"多盟聚合SDK",@"Topon-SDK",@"打开微信"];
     [self.view addSubview:self.listTable];
 }
 - (void)viewWillAppear:(BOOL)animated
@@ -83,6 +84,28 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     }else if (indexPath.row==1) {
         SplashAdapterViewController * splashVC = [[SplashAdapterViewController alloc]init];
         [self.navigationController pushViewController:splashVC animated:YES];
-    }
+    }else if (indexPath.row==2) {
+        ToponSplashViewController * splashVC = [[ToponSplashViewController alloc]init];
+        [self.navigationController pushViewController:splashVC animated:YES];
+    }else{
+//        // 使用 Custom URL Scheme 跳转到另一个应用
+//        NSURL *url = [NSURL URLWithString:@"alipay://"];
+//
+//        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+//            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+//        } else {
+//            // 处理应用未安装的情况
+//        }
+            NSURL *url = [NSURL URLWithString:@"https://m.taobao.com"];
+            if ([[UIApplication sharedApplication] canOpenURL:url]) {
+                if (@available(iOS 10.0, *)) {
+                    [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
+                        
+                    }];
+                } else {
+                    // Fallback on earlier versions
+                }
+            }
+        }
 }
 @end
