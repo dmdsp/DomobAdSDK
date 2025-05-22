@@ -7,21 +7,21 @@ PODS:
   - AnyThinkiOS (6.3.61):
     - AnyThinkiOS/AnyThinkSDK (= 6.3.61)
   - AnyThinkiOS/AnyThinkSDK (6.3.61)
-  - DomobSDK (3.5.4):
-    - DomobSDK/DMAdSDK (= 3.5.4)
-  - DomobSDK/DMAdSDK (3.5.4):
+  - DomobSDK (3.5.5):
+    - DomobSDK/DMAdSDK (= 3.5.5)
+  - DomobSDK/DMAdSDK (3.5.5):
     - Masonry
     - Protobuf (~> 3.27)
     - SDWebImage
-  - DomobSDK/DomobSDKAdapter (3.5.4):
+  - DomobSDK/DomobSDKAdapter (3.5.5):
     - DomobSDK/DMAdSDK
-  - DomobSDK/GMAdSDKAdapter (3.5.4):
+  - DomobSDK/GMAdSDKAdapter (3.5.5):
     - Ads-CN-Beta (= 6.2.0.0)
     - Ads-CN-Beta/CSJMediation
     - DomobSDK/DomobSDKAdapter
     - GMKsAdapter-Beta (~> 3.3.64.0.0)
     - KSAdSDK (~> 3.3.61)
-  - DomobSDK/KSAdSDKAdapter (3.5.4):
+  - DomobSDK/KSAdSDKAdapter (3.5.5):
     - DomobSDK/DomobSDKAdapter
     - KSAdSDK (~> 3.3.61)
   - GMKsAdapter-Beta (3.3.64.0.0):
@@ -57,7 +57,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Ads-CN-Beta: 7a82a9a84e5af6b37d78ea1364648f652df26020
   AnyThinkiOS: 61e5aa6a56e6c89f321ed2cc622a2c011716e8ec
-  DomobSDK: 948c7bd7a7be17f7ecb3ed45286161d0b281b54b
+  DomobSDK: 78375febfebb59df4b321daebde5c9f0336b9e81
   GMKsAdapter-Beta: 39a985c9e198fc449e47ae0f0cdea085973fdf3a
   KSAdSDK: 2b7d0715bb848a9f5b5cb46a5ae25555e109aca0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
