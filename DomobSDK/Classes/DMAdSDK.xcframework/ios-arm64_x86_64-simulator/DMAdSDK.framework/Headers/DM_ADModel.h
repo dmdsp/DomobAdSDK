@@ -92,4 +92,9 @@
 
 @property(nonatomic, strong) NewTargetOption * option;
 
+/** 开始播放上报URL */
+@property (nonatomic, copy) NSArray *eventTrackStartUrl;
+/** 暂停播放上报URL */
+@property (nonatomic, copy) NSArray *eventTrackPauseUrl;
+
 @end
