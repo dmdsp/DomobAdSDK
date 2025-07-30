@@ -58,7 +58,7 @@ typedef void(^CompletionEvent)(BOOL success);
 -(NSString*)getUnionSdkTracker:(DMUnionTrackerModel *)unionTrackerModel templateId:(AdTemplateId)templateId;
 ///  设置调试模式,上线前请关闭.
 /// - Parameter debugMode: 如果想获得测试广告请传Yes,默认为No,
-- (void)setDebugMode:(BOOL)debugMode;
+//- (void)setDebugMode:(BOOL)debugMode;
 /// 有多个版本就多次调用
 /// - Parameters:
 ///   - ver: 20220111
