@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class NewTargetOption;
+@class DspConfig;
 
 @interface DM_ADModel : NSObject
 /**
@@ -90,7 +90,7 @@
 /** 视频时长，单位毫秒 */
 @property(nonatomic, assign) int32_t videoDuration;
 
-@property(nonatomic, strong) NewTargetOption * option;
+@property(nonatomic, strong) DspConfig * option;
 
 /** 开始播放上报URL */
 @property (nonatomic, copy) NSArray *eventTrackStartUrl;

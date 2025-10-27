@@ -135,11 +135,9 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
     self.bannerAd = bannerAd;
     self.bannerAd.bannerView.backgroundColor = [UIColor whiteColor];
     self.bannerAd.bannerView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height/2, self.bannerAd.bannerView.bounds.size.width, self.bannerAd.bannerView.bounds.size.height);
-    if (self.bannerAd.bannerView.adTemplate == DMBannerAdTemplateCustom) {
-        self.bannerAd.bannerView.closeBtn.hidden = YES;
-        self.bannerAd.bannerView.adImageView.frame = self.bannerAd.bannerView.bounds;
-    }
-
+    self.bannerAd.bannerView.closeBtn.hidden = YES;
+    self.bannerAd.bannerView.adImageView.frame = self.bannerAd.bannerView.bounds;
+    
     
     [self.view addSubview:self.bannerAd.bannerView];
 }

@@ -8,14 +8,6 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-// 定义一个内联函数来获取屏幕宽度适配比例
-static inline CGFloat kWAdapt(void) {
-    // 判断当前是否为横屏
-    BOOL isLandscape = UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation);
-    // 如果是横屏，使用屏幕的高度进行适配；如果是竖屏，使用屏幕的宽度进行适配
-    CGFloat adaptValue = isLandscape ? [[UIScreen mainScreen] bounds].size.height / 375 : [[UIScreen mainScreen] bounds].size.width / 375;
-    return adaptValue;
-}
 //获取系统对象
 #define kApplication        [UIApplication sharedApplication]
 #define kAppWindow          [UIApplication sharedApplication].delegate.window
@@ -82,7 +74,7 @@ static inline CGFloat kWAdapt(void) {
  TOCK
  */
 #define TICK NSDate *startTime = [NSDate date];
-#define TOCK NSLog(@"Time:%f", -[startTime timeIntervalSinceNow]);
+#define TOCK NSLog(@"时间:%f", -[startTime timeIntervalSinceNow]);
 
 /* 判断是否为iPhone */
 #define isiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
@@ -149,7 +141,7 @@ static inline CGFloat kWAdapt(void) {
 #define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
 #define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
-#define kEndTime  NSLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start)
+#define kEndTime  NSLog(@"时间: %f", CFAbsoluteTimeGetCurrent() - start)
 
 #define FONT(F) [UIFont fontWithName:@"PingFang SC" size:F]
 

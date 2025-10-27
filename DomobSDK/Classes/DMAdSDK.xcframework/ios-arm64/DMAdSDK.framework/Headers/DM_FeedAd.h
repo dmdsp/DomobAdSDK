@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) DM_FeedView *feedView;
 //懒加载的方式移除了feedView的子控件,请在feedAdDidRender后获取
 @property (nonatomic,strong) DM_FeedView *registerView;
+//广告创意类型
+@property (nonatomic, assign, readonly) DMAdCreativeType creativeType;
 
 //使用controller present 落地页
 @property (nonatomic, weak) UIViewController *presentAdViewController;

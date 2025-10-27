@@ -22,6 +22,11 @@ typedef NS_ENUM(NSInteger, DMAdBiddingCode) {
     DMAdBiddingCodeHitCounterCheat = 2003, // 命中反作弊
     DMAdBiddingCodeBuyThroughOtherChannel = 2004 // 已通过其他渠道采买
 };
+typedef NS_ENUM(NSInteger, DMAdCreativeType) {
+    DMAdCreativeTypeUnknown = 0, // 未知类型
+    DMAdCreativeTypeImage = 1,   // 图片广告
+    DMAdCreativeTypeVideo = 2    // 视频广告
+};
 typedef NS_ENUM(NSInteger, AdTemplateId) {
     AdTemplateIdSplash = 60002, // 开屏
     AdTemplateIdFeed = 20005, // 信息流

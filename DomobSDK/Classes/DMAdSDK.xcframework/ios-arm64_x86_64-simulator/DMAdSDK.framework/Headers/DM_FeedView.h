@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <DMAdSDK/DM_FeedAd.h>
+#import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 // 定义样式模板枚举
@@ -64,12 +65,18 @@ typedef void(^DetailViewDidPresentScreen)(void);
 @property (nonatomic, assign) DMFeedAdTemplate adTemplate;
 @property (nonatomic, weak) UIViewController *presentAdViewController;
 
+//player
+@property (strong, nonatomic) AVPlayer *player;
+@property (strong, nonatomic) AVPlayerLayer *playerLayer;
+
 
 @property (nonatomic, copy) ClickLinkEvent linkEvent;
 @property (nonatomic, copy) ClickCloseEvent closeEvent;
 @property (nonatomic, copy) DidShowEvent showEvent;
 @property (nonatomic, copy) DetailViewDidClose detailViewDidClose;
 @property (nonatomic, copy) DetailViewDidPresentScreen detailViewDidPresentScreen;
+//广告创意类型
+@property (nonatomic, assign) DMAdCreativeType creativeType;
 
 -(instancetype)initWithFeedAdTemplate:(DMFeedAdTemplate)adTemplate;
 //关闭当前view
