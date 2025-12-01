@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DomobSDK'
-  s.version          = '3.7.1'
+  s.version          = '3.7.2'
   s.summary          = '多盟广告SDK'
   
   # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'DMAdSDK' do |dmadsdk|
     dmadsdk.frameworks = 'AdSupport', 'AppTrackingTransparency', 'CoreLocation', 'CoreMotion', 'CoreTelephony'
-    dmadsdk.dependency 'Protobuf', '~> 3.27'
+    dmadsdk.dependency 'Protobuf', '~> 3.17'
     dmadsdk.vendored_frameworks = 'DomobSDK/Classes/DMAdSDK.xcframework'
     
     dmadsdk.resource_bundles = {
