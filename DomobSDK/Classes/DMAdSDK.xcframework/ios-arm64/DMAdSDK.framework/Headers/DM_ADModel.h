@@ -92,6 +92,9 @@
 
 @property(nonatomic, strong) DspConfig * option;
 
+/** 广告来源标识 */
+@property (nonatomic,copy) NSString *adSource;
+
 /** 开始播放上报URL */
 @property (nonatomic, copy) NSArray *eventTrackStartUrl;
 /** 暂停播放上报URL */
