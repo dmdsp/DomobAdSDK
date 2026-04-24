@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class DMShakeInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 展示广告
 /// - Parameter viewController: 当前要展示的控制器
 -(void)showSplashViewInRootViewController:(UIViewController *)viewController;
+/// 广告加载成功后调用，根据 shakeCallback 配置返回摇一摇信息；0-关闭时返回 nil
+- (nullable DMShakeInfo *)getShakeInfo;
 
 @end
 

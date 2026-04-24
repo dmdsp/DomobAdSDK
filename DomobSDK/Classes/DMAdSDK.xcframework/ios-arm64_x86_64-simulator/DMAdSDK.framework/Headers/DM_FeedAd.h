@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class DMShakeInfo;
 
 @protocol DMFeedAdDelegate;
 @class DM_FeedView;
@@ -46,6 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)biddingFeedSuccess:(long)price;
 //竞价失败的上报
 - (void)biddingFeedFailed:(long)price Code:(DMAdBiddingCode)code;
+/// 广告加载成功后调用，根据 shakeCallback 配置返回摇一摇信息；0-关闭时返回 nil
+- (nullable DMShakeInfo *)getShakeInfo;
 
 @end
 
@@ -55,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 加载失败
 - (void)feedAdDidFailToLoadWithError:(NSError *)error;
 /// 渲染成功
-- (void)feedAdDidRender:(DM_FeedAd*)feedAd;;
+- (void)feedAdDidRender:(DM_FeedAd*)feedAd;
 /// 渲染失败
 - (void)feedAdDidFailToRenderWithError:(NSError *)error;
 /// 广告已经打开

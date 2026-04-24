@@ -611,12 +611,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DomobAdSDK_Example/Pods-DomobAdSDK_Example-resources.sh",
 				"${PODS_ROOT}/Ads-CN-Beta/SDK/CSJAdSDK.bundle",
 				"${PODS_ROOT}/AnyThinkiOS/core/AnyThinkSDK.bundle",
+				"${PODS_ROOT}/BaiduMobAdSDK/baidumobadsdk.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DomobSDK/DMAdSDK_Bundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSJAdSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AnyThinkSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DMAdSDK_Bundle.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

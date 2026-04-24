@@ -21,6 +21,7 @@ typedef void(^DomobBannerAdapterCompletion)(DomobBannerAdapter * bannerAdapter);
 @property(nonatomic, assign, readonly) long ecpm;
 
 @property(nonatomic, assign, readonly) long originalPrice;
+@property(nonatomic, assign, readonly) int profitMargin;
 @property (nonatomic , copy) NSString * materialId ;
 @property(nonatomic, assign) int64_t bidTs;
 @property (nonatomic, strong) DMUnionTrackerModel * trackerModel;

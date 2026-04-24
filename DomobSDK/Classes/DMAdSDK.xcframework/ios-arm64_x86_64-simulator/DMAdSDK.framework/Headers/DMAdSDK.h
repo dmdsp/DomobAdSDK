@@ -27,3 +27,5 @@ FOUNDATION_EXPORT const unsigned char DMAdSDKVersionString[];
 #import <DMAdSDK/DM_Macro.h>
 #import <DMAdSDK/DMUnionModel.h>
 #import <DMAdSDK/DM_ADModel.h>
+#import <DMAdSDK/DMShakeInfo.h>
+

@@ -61,9 +61,10 @@ typedef void(^CompletionEvent)(BOOL success);
 -(NSString*)getSdkDevice;
 //
 -(NSString*)getUnionSdkTracker:(DMUnionTrackerModel *)unionTrackerModel templateId:(AdTemplateId)templateId;
-///  设置调试模式,上线前请关闭.
-/// - Parameter debugMode: 如果想获得测试广告请传Yes,默认为No,
-//- (void)setDebugMode:(BOOL)debugMode;
+/// 根据我方 slotID 获取 GroMore 竞价场景下的 ECPM 价格（单位：分），来源为服务端配置的 expandData 字段
+- (long)getGromoreECPMForSlotID:(NSString *)slotID;
+/// 切换到本地测试环境，所有请求指向 10.0.0.203:8181
+- (void)switchToTestEnvironment;
 
 @end
 

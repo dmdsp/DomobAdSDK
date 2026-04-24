@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DomobSDK'
-  s.version          = '3.7.5'
+  s.version          = '3.8.0'
   s.summary          = '多盟广告SDK'
   
   # This description is used to generate tags and improve search results.
@@ -54,8 +54,14 @@ Pod::Spec.new do |s|
     gmadsdkadapter.dependency 'Ads-CN-Beta', '6.2.0.0'
     gmadsdkadapter.dependency 'Ads-CN-Beta/CSJMediation'
     gmadsdkadapter.dependency 'GMKsAdapter-Beta', '~> 3.3.64.0.0'
-    gmadsdkadapter.dependency 'KSAdSDK', '~> 3.3.61'
+    gmadsdkadapter.dependency 'KSAdSDK', '~> 3.3.64'
     gmadsdkadapter.dependency 'DomobSDK/DomobSDKAdapter'
+    gmadsdkadapter.dependency 'GMGdtAdapter-Beta', '~> 4.14.71.0'
+    gmadsdkadapter.dependency 'GDTMobSDK', '~> 4.14.71'
+
+    gmadsdkadapter.dependency 'GMBaiduAdapter-Beta', '~> 5.35.1'
+    gmadsdkadapter.dependency 'BaiduMobAdSDK'
+    
     gmadsdkadapter.ios.deployment_target = '12.0'
 
     gmadsdkadapter.vendored_frameworks = 'DomobSDK/Classes/GMAdSDKAdapter.xcframework'

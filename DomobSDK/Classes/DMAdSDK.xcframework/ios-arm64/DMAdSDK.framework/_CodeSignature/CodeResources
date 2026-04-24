@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/Pods_DMAd.framework/Pods_DMAd</key>
 		<data>
-		gy1YD0ZCrItrL4UedjXkUfWzjH0=
+		qdKoqPQOkGb5UjHzQMQUuppduX0=
 		</data>
 		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -18,19 +18,23 @@
 		</data>
 		<key>Headers/DMAdSDK.h</key>
 		<data>
-		tjn5EfIBVw1IBqa9SsaQPKMVo4A=
+		jJ/JV67VHgHtitwqNpNDTwfXyEo=
 		</data>
 		<key>Headers/DMAds.h</key>
 		<data>
-		7kGfk9T7D/uwGIa1YXwU6TC0uaU=
+		Bp4GFbc7n088Y9ft7AudIoVrHSQ=
+		</data>
+		<key>Headers/DMShakeInfo.h</key>
+		<data>
+		JPneXxuFAFG56q38VQp2qucWWOA=
 		</data>
 		<key>Headers/DMUnionModel.h</key>
 		<data>
-		Jv7LikR5Da91dMfeH9LhVYVzFRg=
+		l3Dt1CjykwWzqaICf/EG2k+GgdI=
 		</data>
 		<key>Headers/DM_ADModel.h</key>
 		<data>
-		zt44I6/TPCduVhumEYpSwgLnens=
+		CJISFJAxp1CazxYQivHQUmPiKWs=
 		</data>
 		<key>Headers/DM_BannerAd.h</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Headers/DM_FeedAd.h</key>
 		<data>
-		xsipKO5p8IfC3H8NE9cTmDm8Lh0=
+		knVjVzEa3f0C+HnqvrK9+JzJ6Iw=
 		</data>
 		<key>Headers/DM_FeedView.h</key>
 		<data>
@@ -50,7 +54,7 @@
 		</data>
 		<key>Headers/DM_InterstitialAd.h</key>
 		<data>
-		R3FbAH43SO/AT6r02GO5ImkJbq4=
+		dxNHcJK2+eZ/0C7cR+rke4YQN8E=
 		</data>
 		<key>Headers/DM_Macro.h</key>
 		<data>
@@ -62,11 +66,11 @@
 		</data>
 		<key>Headers/DM_RewardVideoAd.h</key>
 		<data>
-		FzBn2s7ly0upiOUW2q6ihNXFhmU=
+		vEMts7kaKpQJFFGcllTbi2DCL6k=
 		</data>
 		<key>Headers/DM_SplashAd.h</key>
 		<data>
-		EJuoHiGN0YWlkGMCCxFlogb6Yic=
+		9S8zIan2/s4aAR/Pl+MaS01WdUU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -94,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gy1YD0ZCrItrL4UedjXkUfWzjH0=
+			qdKoqPQOkGb5UjHzQMQUuppduX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dG9nZwuAVmr5+vGclDRPHbnpu4tSB3Q82GmOsxzdv7s=
+			2oTfDPZsCD/1j8a1HdBxEt4HEUuN9og50T5MHZfZCRw=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
@@ -116,44 +120,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tjn5EfIBVw1IBqa9SsaQPKMVo4A=
+			jJ/JV67VHgHtitwqNpNDTwfXyEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			KgaOzzgTqJn4TFLHA8rgmqDc/4WNZBj8bCBWBom2sZM=
+			1xWiN8RnFarnEUZ1CyJX3XEWu2WvliJNNRnPz3wpXEc=
 			</data>
 		</dict>
 		<key>Headers/DMAds.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7kGfk9T7D/uwGIa1YXwU6TC0uaU=
+			Bp4GFbc7n088Y9ft7AudIoVrHSQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jZugv0A7biy5Xb8/WNEQRSo/77jHbi4Gj4D637WwYVc=
+			quYJXijmSeNdX8x38OqFzcdygy5JS/4N6SneXRjZGGQ=
+			</data>
+		</dict>
+		<key>Headers/DMShakeInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JPneXxuFAFG56q38VQp2qucWWOA=
+			</data>
+			<key>hash2</key>
+			<data>
+			+RhaxDTS1GizZBwD+eKvnnYDO0fwDJ5ejp75EZseFnE=
 			</data>
 		</dict>
 		<key>Headers/DMUnionModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jv7LikR5Da91dMfeH9LhVYVzFRg=
+			l3Dt1CjykwWzqaICf/EG2k+GgdI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mAoyHePggKdDK0eJW0XScyD+nCxTQ2gr1xwSMhhj8oM=
+			M919o23IZSnCsQNmOyj6MgXxQcgOlnxwG2NtuY4LU7I=
 			</data>
 		</dict>
 		<key>Headers/DM_ADModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zt44I6/TPCduVhumEYpSwgLnens=
+			CJISFJAxp1CazxYQivHQUmPiKWs=
 			</data>
 			<key>hash2</key>
 			<data>
-			BwcSPGWzz3HNhNKgkkKvpLEw6GgqobpYlvI4DV+biWg=
+			24sCWKFojI7ve54ywDCgysWGRYkkw9ggJLsy8UkjFe0=
 			</data>
 		</dict>
 		<key>Headers/DM_BannerAd.h</key>
@@ -182,11 +197,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xsipKO5p8IfC3H8NE9cTmDm8Lh0=
+			knVjVzEa3f0C+HnqvrK9+JzJ6Iw=
 			</data>
 			<key>hash2</key>
 			<data>
-			GVeuUw8zmlOYqvcE7moD+sUdKlg/Mzw/kZ7psou+tno=
+			a6ddr8KemlTMVEiFhMsJc5tEP2oYOw5lolRVp3pazk8=
 			</data>
 		</dict>
 		<key>Headers/DM_FeedView.h</key>
@@ -204,11 +219,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R3FbAH43SO/AT6r02GO5ImkJbq4=
+			dxNHcJK2+eZ/0C7cR+rke4YQN8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			dTu/UU5bKHe7xoOKZdypIz/LHCrDgIAGiZRb75KfPGg=
+			bR4UU3NE2s36ExN/BdcMnofuLtUr17ZwaNJPmyur/po=
 			</data>
 		</dict>
 		<key>Headers/DM_Macro.h</key>
@@ -237,22 +252,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FzBn2s7ly0upiOUW2q6ihNXFhmU=
+			vEMts7kaKpQJFFGcllTbi2DCL6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			r8j5Go0hCxVJMObr+hVN4pd7/uZu29mrESyAcK7zlsQ=
+			ywsXyxt8txJJrc9EeaegG0Zha5U5bQSZzTFVNBuFuQY=
 			</data>
 		</dict>
 		<key>Headers/DM_SplashAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EJuoHiGN0YWlkGMCCxFlogb6Yic=
+			9S8zIan2/s4aAR/Pl+MaS01WdUU=
 			</data>
 			<key>hash2</key>
 			<data>
-			fpJ6OQsUNGuLHSG9x+AmVMKFy63vbGU1mBpB4D/b9sE=
+			WHec2tRyKFTwOXaM+Xr/hkh4kHYFHP0g7rM2PYokPrA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

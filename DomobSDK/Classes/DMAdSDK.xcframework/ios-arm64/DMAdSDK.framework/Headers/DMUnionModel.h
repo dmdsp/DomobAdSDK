@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy) NSDictionary *templateDic;
 /** profitMargin */
 @property(nonatomic, copy) NSDictionary *profitMarginDic;
+/** expandData，key: adZoneId(我方slotID)，value: 服务端配置的扩展字段（含竞价底价） */
+@property(nonatomic, strong) NSMutableDictionary *expandDataDic;
 /** version */
 @property(nonatomic, copy) NSString *version;
 /** pub_time */

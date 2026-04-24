@@ -69,6 +69,9 @@
 /** 视频素材地址 */
 @property (nonatomic,copy) NSString *videoURL;
 
+/** 素材类型: 2=图片 4=视频 */
+@property (nonatomic, assign) int32_t creativeType;
+
 /** 广告描述 */
 @property (nonatomic,copy) NSString *description_p;
 /** 缓存到本地的视频地址 */
