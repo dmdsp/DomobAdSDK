@@ -12,9 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 // 定义样式模板枚举
 typedef NS_ENUM(NSInteger, DMFeedAdTemplate) {
-//    左图右文
+//    右文左图
     DMFeedAdTemplateStyle1 = 1,
-//    右图左文
+//    左文右图
     DMFeedAdTemplateStyle2 = 2,
 //    上文下图
     DMFeedAdTemplateStyle3 = 3,
@@ -31,6 +31,7 @@ typedef void(^ClickCloseEvent)(void);
 typedef void(^DidShowEvent)(void);
 typedef void(^DetailViewDidClose)(void);
 typedef void(^DetailViewDidPresentScreen)(void);
+typedef void(^VideoDidPauseEvent)(void);
 
 @interface DM_FeedView : UIView
 
@@ -75,6 +76,7 @@ typedef void(^DetailViewDidPresentScreen)(void);
 @property (nonatomic, copy) DidShowEvent showEvent;
 @property (nonatomic, copy) DetailViewDidClose detailViewDidClose;
 @property (nonatomic, copy) DetailViewDidPresentScreen detailViewDidPresentScreen;
+@property (nonatomic, copy) VideoDidPauseEvent videoPauseEvent;
 //广告创意类型
 @property (nonatomic, assign) DMAdCreativeType creativeType;
 

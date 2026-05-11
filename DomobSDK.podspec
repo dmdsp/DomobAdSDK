@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DomobSDK'
-  s.version          = '3.8.0.1'
+  s.version          = '3.8.1'
   s.summary          = '多盟广告SDK'
   
   # This description is used to generate tags and improve search results.
