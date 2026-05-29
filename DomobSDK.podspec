@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DomobSDK'
-  s.version          = '3.8.1'
+  s.version          = '3.8.2'
   s.summary          = '多盟广告SDK'
   
   # This description is used to generate tags and improve search results.
@@ -78,6 +78,15 @@ Pod::Spec.new do |s|
     
   end
   
+  s.subspec 'IQAdSDKAdapter' do |iqadsdkadapter|
+    # 添加 DMAdSDKAdapter 的配置信息
+    iqadsdkadapter.dependency 'iAdSDK', '~> 2.5.002'
+    iqadsdkadapter.dependency 'DomobSDK/DomobSDKAdapter'
+    iqadsdkadapter.ios.deployment_target = '12.0'
+
+    iqadsdkadapter.vendored_frameworks = 'DomobSDK/Classes/IQAdSDKAdapter.xcframework'
+
+  end
   
   s.static_framework = true
   s.default_subspec = 'DMAdSDK' # 将DMAdSDK设为默认子模块

@@ -25,6 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) UIViewController *presentAdViewController;
 @property (nonatomic , copy) NSString * materialId ;
 @property (nonatomic , copy) NSString * rid ;
+/// 外部注入的链路请求 ID（ap）；若设置则优先使用，否则自动生成
+@property (nonatomic, copy, nullable) NSString *requestId;
+/// 外部注入的 ADN 请求 ID（aq）；若设置则优先使用，否则自动生成
+@property (nonatomic, copy, nullable) NSString *adnrequestId;
 
 /// 初始化信息流广告和配置代理
 /// - Parameter delegate: 代理

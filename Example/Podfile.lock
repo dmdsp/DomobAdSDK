@@ -8,13 +8,13 @@ PODS:
     - AnyThinkiOS/AnyThinkSDK (= 6.3.61)
   - AnyThinkiOS/AnyThinkSDK (6.3.61)
   - BaiduMobAdSDK (10.032)
-  - DomobSDK (3.8.1):
-    - DomobSDK/DMAdSDK (= 3.8.1)
-  - DomobSDK/DMAdSDK (3.8.1):
+  - DomobSDK (3.8.2):
+    - DomobSDK/DMAdSDK (= 3.8.2)
+  - DomobSDK/DMAdSDK (3.8.2):
     - Protobuf (~> 3.10)
-  - DomobSDK/DomobSDKAdapter (3.8.1):
+  - DomobSDK/DomobSDKAdapter (3.8.2):
     - DomobSDK/DMAdSDK
-  - DomobSDK/GMAdSDKAdapter (3.8.1):
+  - DomobSDK/GMAdSDKAdapter (3.8.2):
     - Ads-CN-Beta (= 6.2.0.0)
     - Ads-CN-Beta/CSJMediation
     - BaiduMobAdSDK
@@ -24,7 +24,10 @@ PODS:
     - GMGdtAdapter-Beta (~> 4.14.71.0)
     - GMKsAdapter-Beta (~> 3.3.64.0.0)
     - KSAdSDK (~> 3.3.64)
-  - DomobSDK/KSAdSDKAdapter (3.8.1):
+  - DomobSDK/IQAdSDKAdapter (3.8.2):
+    - DomobSDK/DomobSDKAdapter
+    - iAdSDK (~> 2.5.002)
+  - DomobSDK/KSAdSDKAdapter (3.8.2):
     - DomobSDK/DomobSDKAdapter
     - KSAdSDK (~> 3.3.61)
   - GDTMobSDK (4.14.90):
@@ -36,6 +39,7 @@ PODS:
     - Ads-CN-Beta/CSJMediation (>= 6.1.0.9)
   - GMKsAdapter-Beta (3.3.64.0.0):
     - Ads-CN-Beta/CSJMediation (>= 6.2.0.0)
+  - iAdSDK (2.5.002)
   - KSAdSDK (3.3.66)
   - Protobuf (3.27.2)
 
@@ -44,6 +48,7 @@ DEPENDENCIES:
   - DomobSDK (from `../`)
   - DomobSDK/DomobSDKAdapter (from `../`)
   - DomobSDK/GMAdSDKAdapter (from `../`)
+  - DomobSDK/IQAdSDKAdapter (from `../`)
   - DomobSDK/KSAdSDKAdapter (from `../`)
 
 SPEC REPOS:
@@ -55,6 +60,7 @@ SPEC REPOS:
     - GMBaiduAdapter-Beta
     - GMGdtAdapter-Beta
     - GMKsAdapter-Beta
+    - iAdSDK
     - KSAdSDK
     - Protobuf
 
@@ -66,14 +72,15 @@ SPEC CHECKSUMS:
   Ads-CN-Beta: 7a82a9a84e5af6b37d78ea1364648f652df26020
   AnyThinkiOS: 61e5aa6a56e6c89f321ed2cc622a2c011716e8ec
   BaiduMobAdSDK: d8f9357d5d1842b4def0370d94e8ad1e1ac2c370
-  DomobSDK: 275eabc98375910f116be9d1429f772f593d54bd
+  DomobSDK: d4953c1877613306ef3d28c0d789a1625712aa89
   GDTMobSDK: cb7162e527f2db41f97786f3fb6498544d5d10e7
   GMBaiduAdapter-Beta: e0595477ccde9bd8af59a88bfccc9c05851967d3
   GMGdtAdapter-Beta: f222a1c6c9a762513c24e24c9bbc4b2dc9b51aaf
   GMKsAdapter-Beta: 39a985c9e198fc449e47ae0f0cdea085973fdf3a
+  iAdSDK: 83f02437d3c1055cd74f5ac5ecb70f4b35d98ade
   KSAdSDK: 2b7d0715bb848a9f5b5cb46a5ae25555e109aca0
   Protobuf: fb2c13674723f76ff6eede14f78847a776455fa2
 
-PODFILE CHECKSUM: e2668d05dc97446b1473571ba706a2c13b8685af
+PODFILE CHECKSUM: 5c592dbb916d2aa7a1c1c0b01276a069ebda9ffe
 
 COCOAPODS: 1.15.2

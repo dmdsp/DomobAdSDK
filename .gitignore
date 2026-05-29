@@ -35,3 +35,6 @@ Carthage/Build
 #
 # Pods/
 Example/Pods
+
+# Claude Code
+.claude/

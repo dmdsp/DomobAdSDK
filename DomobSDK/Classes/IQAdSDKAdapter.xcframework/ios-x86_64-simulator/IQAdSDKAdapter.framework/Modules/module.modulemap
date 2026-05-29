@@ -1,0 +1,6 @@
+framework module IQAdSDKAdapter {
+  umbrella header "IQAdSDKAdapter.h"
+  export *
+
+  module * { export * }
+}

@@ -36,6 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
 //用于处理自渲染时的数据模型
 @property (nonatomic,strong) DM_ADModel *feedModel;
 @property (nonatomic , copy) NSString * rid ;
+/// 外部注入的链路请求 ID（ap）；若设置则优先使用，否则自动生成
+@property (nonatomic, copy, nullable) NSString *requestId;
+/// 外部注入的 ADN 请求 ID（aq）；若设置则优先使用，否则自动生成
+@property (nonatomic, copy, nullable) NSString *adnrequestId;
 
 
 /// 初始化信息流广告和配置代理

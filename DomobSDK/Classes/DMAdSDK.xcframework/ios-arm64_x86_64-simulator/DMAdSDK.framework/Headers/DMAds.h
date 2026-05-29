@@ -45,7 +45,7 @@ typedef void(^CompletionEvent)(BOOL success);
 @class DMUnionTrackerModel;
 
 @interface DMAds : NSObject
-@property(nonatomic,strong) DMUnionModel *ksModel, *gmModel,*configModel;
+@property(nonatomic,strong) DMUnionModel *ksModel, *gmModel, *iqModel, *configModel;
 
 // 单例
 +(instancetype)shareInstance;
