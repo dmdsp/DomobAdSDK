@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class DspConfig;
+@class DM_DspConfig;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) double acceleration;
 @property (nonatomic, assign) double time;
 
-+ (nullable DMShakeInfo *)shakeInfoWithOption:(DspConfig *)option;
++ (nullable DMShakeInfo *)shakeInfoWithOption:(DM_DspConfig *)option;
 
 @end
 

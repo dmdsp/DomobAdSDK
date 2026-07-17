@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class DspConfig;
+@class DM_DspConfig;
 
 @interface DM_ADModel : NSObject
 /**
@@ -93,7 +93,7 @@
 /** 视频时长，单位毫秒 */
 @property(nonatomic, assign) int32_t videoDuration;
 
-@property(nonatomic, strong) DspConfig * option;
+@property(nonatomic, strong) DM_DspConfig * option;
 
 /** 广告来源标识 */
 @property (nonatomic,copy) NSString *adSource;

@@ -47,6 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)showSplashViewInRootViewController:(UIViewController *)viewController;
 /// 广告加载成功后调用，根据 shakeCallback 配置返回摇一摇信息；0-关闭时返回 nil
 - (nullable DMShakeInfo *)getShakeInfo;
+/// 预加载缓存命中复用时调用：按埋点规范补发 2005(广告请求)并生成新 aq，2001(宿主调用)不发
+- (void)trackCacheHitAdnRequest;
 
 @end
 
