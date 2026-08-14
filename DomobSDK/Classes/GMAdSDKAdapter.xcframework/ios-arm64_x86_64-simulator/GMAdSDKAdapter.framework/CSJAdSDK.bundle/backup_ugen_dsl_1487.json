@@ -56,7 +56,7 @@
                 "height": 15,
                 "scaleType": "fitCenter",
                 "flexShrink": 1,
-                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+                "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
                 "id": "5b5076",
                 "name": "Image",
                 "onTap": {
@@ -72,7 +72,7 @@
                 "children": [{
                     "width": 50,
                     "height": 50,
-                    "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_play.png",
+                    "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_play.png",
                     "scaleType": "fitCenter",
                     "layoutGravity": "center",
                     "id": "convertViewShowPlayButton_6cf38b",
@@ -161,7 +161,7 @@
                 }, {
                     "width": 11,
                     "height": 11,
-                    "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_close_gray.png",
+                    "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_close_gray.png",
                     "scaleType": "fitXY",
                     "flexShrink": "0",
                     "id": "c4df7f",

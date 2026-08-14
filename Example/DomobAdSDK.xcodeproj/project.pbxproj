@@ -28,11 +28,6 @@
 		BC977BB82C3D17BB00134E72 /* InterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B992C3D17BA00134E72 /* InterstitialAdViewController.m */; };
 		BC977BB92C3D17BB00134E72 /* RewardVideoAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B9B2C3D17BA00134E72 /* RewardVideoAdViewController.m */; };
 		BC977BBA2C3D17BB00134E72 /* SplashAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977B9D2C3D17BA00134E72 /* SplashAdViewController.m */; };
-		BC977BBB2C3D17BB00134E72 /* BannerAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA02C3D17BA00134E72 /* BannerAdapterViewController.m */; };
-		BC977BBC2C3D17BB00134E72 /* FeedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA22C3D17BA00134E72 /* FeedAdapterViewController.m */; };
-		BC977BBD2C3D17BB00134E72 /* InterstitialAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA42C3D17BA00134E72 /* InterstitialAdapterViewController.m */; };
-		BC977BBE2C3D17BB00134E72 /* RewardVideoAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA62C3D17BA00134E72 /* RewardVideoAdapterViewController.m */; };
-		BC977BBF2C3D17BB00134E72 /* SplashAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BA82C3D17BA00134E72 /* SplashAdapterViewController.m */; };
 		BC977BC02C3D17BB00134E72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC977BAC2C3D17BA00134E72 /* InfoPlist.strings */; };
 		BC977BC12C3D17BB00134E72 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = BC977BAE2C3D17BA00134E72 /* UIView+Toast.m */; };
 		BC977BC22C3D17BB00134E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC977BB02C3D17BA00134E72 /* LaunchScreen.storyboard */; };
@@ -85,16 +80,6 @@
 		BC977B9B2C3D17BA00134E72 /* RewardVideoAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVideoAdViewController.m; sourceTree = "<group>"; };
 		BC977B9C2C3D17BA00134E72 /* SplashAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashAdViewController.h; sourceTree = "<group>"; };
 		BC977B9D2C3D17BA00134E72 /* SplashAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashAdViewController.m; sourceTree = "<group>"; };
-		BC977B9F2C3D17BA00134E72 /* BannerAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerAdapterViewController.h; sourceTree = "<group>"; };
-		BC977BA02C3D17BA00134E72 /* BannerAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerAdapterViewController.m; sourceTree = "<group>"; };
-		BC977BA12C3D17BA00134E72 /* FeedAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAdapterViewController.h; sourceTree = "<group>"; };
-		BC977BA22C3D17BA00134E72 /* FeedAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAdapterViewController.m; sourceTree = "<group>"; };
-		BC977BA32C3D17BA00134E72 /* InterstitialAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialAdapterViewController.h; sourceTree = "<group>"; };
-		BC977BA42C3D17BA00134E72 /* InterstitialAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialAdapterViewController.m; sourceTree = "<group>"; };
-		BC977BA52C3D17BA00134E72 /* RewardVideoAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVideoAdapterViewController.h; sourceTree = "<group>"; };
-		BC977BA62C3D17BA00134E72 /* RewardVideoAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVideoAdapterViewController.m; sourceTree = "<group>"; };
-		BC977BA72C3D17BA00134E72 /* SplashAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashAdapterViewController.h; sourceTree = "<group>"; };
-		BC977BA82C3D17BA00134E72 /* SplashAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashAdapterViewController.m; sourceTree = "<group>"; };
 		BC977BAA2C3D17BA00134E72 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		BC977BAB2C3D17BA00134E72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		BC977BAE2C3D17BA00134E72 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
@@ -180,7 +165,6 @@
 				BC977B922C3D17BA00134E72 /* Images.xcassets */,
 				BC977BAA2C3D17BA00134E72 /* UIView+Toast.h */,
 				BC977BAE2C3D17BA00134E72 /* UIView+Toast.m */,
-				BC977BA92C3D17BA00134E72 /* UnionAdDemo */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -242,23 +226,6 @@
 				BC977B9D2C3D17BA00134E72 /* SplashAdViewController.m */,
 			);
 			path = DMAdSDKDemo;
-			sourceTree = "<group>";
-		};
-		BC977BA92C3D17BA00134E72 /* UnionAdDemo */ = {
-			isa = PBXGroup;
-			children = (
-				BC977B9F2C3D17BA00134E72 /* BannerAdapterViewController.h */,
-				BC977BA02C3D17BA00134E72 /* BannerAdapterViewController.m */,
-				BC977BA12C3D17BA00134E72 /* FeedAdapterViewController.h */,
-				BC977BA22C3D17BA00134E72 /* FeedAdapterViewController.m */,
-				BC977BA32C3D17BA00134E72 /* InterstitialAdapterViewController.h */,
-				BC977BA42C3D17BA00134E72 /* InterstitialAdapterViewController.m */,
-				BC977BA52C3D17BA00134E72 /* RewardVideoAdapterViewController.h */,
-				BC977BA62C3D17BA00134E72 /* RewardVideoAdapterViewController.m */,
-				BC977BA72C3D17BA00134E72 /* SplashAdapterViewController.h */,
-				BC977BA82C3D17BA00134E72 /* SplashAdapterViewController.m */,
-			);
-			path = UnionAdDemo;
 			sourceTree = "<group>";
 		};
 		BC977BAD2C3D17BA00134E72 /* en.lproj */ = {
@@ -468,14 +435,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DMAppDelegate.m in Sources */,
-				BC977BBE2C3D17BB00134E72 /* RewardVideoAdapterViewController.m in Sources */,
-				BC977BBC2C3D17BB00134E72 /* FeedAdapterViewController.m in Sources */,
 				BC977BC12C3D17BB00134E72 /* UIView+Toast.m in Sources */,
-				BC977BBD2C3D17BB00134E72 /* InterstitialAdapterViewController.m in Sources */,
 				BC977BBA2C3D17BB00134E72 /* SplashAdViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* DMViewController.m in Sources */,
-				BC977BBF2C3D17BB00134E72 /* SplashAdapterViewController.m in Sources */,
-				BC977BBB2C3D17BB00134E72 /* BannerAdapterViewController.m in Sources */,
 				BC977BB72C3D17BB00134E72 /* FeedAdViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				BC977BB82C3D17BB00134E72 /* InterstitialAdViewController.m in Sources */,

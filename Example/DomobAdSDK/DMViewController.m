@@ -7,7 +7,6 @@
 
 #import "DMViewController.h"
 #import "SplashAdViewController.h"
-#import "SplashAdapterViewController.h"
 
 
 static NSString *cellWithIdentifier = @"cellWithIdentifier";
@@ -81,8 +80,7 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
         SplashAdViewController * splashVC = [[SplashAdViewController alloc]init];
         [self.navigationController pushViewController:splashVC animated:YES];
     }else if (indexPath.row==1) {
-        SplashAdapterViewController * splashVC = [[SplashAdapterViewController alloc]init];
-        [self.navigationController pushViewController:splashVC animated:YES];
+        
     }else if (indexPath.row==2) {
     }else{
 //        // 使用 Custom URL Scheme 跳转到另一个应用

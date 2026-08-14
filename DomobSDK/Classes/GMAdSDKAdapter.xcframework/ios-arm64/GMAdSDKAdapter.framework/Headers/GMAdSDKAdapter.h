@@ -18,6 +18,5 @@ FOUNDATION_EXPORT const unsigned char GMAdSDKAdapterVersionString[];
 #import <GMAdSDKAdapter/GMAdapter.h>
 #import <GMAdSDKAdapter/GMAdSplashAdapter.h>
 #import <GMAdSDKAdapter/GMAdFeedAdapter.h>
-#import <GMAdSDKAdapter/GMAdBannerAdapter.h>
 #import <GMAdSDKAdapter/GMAdInterstitialAdapter.h>
 #import <GMAdSDKAdapter/GMAdRewardedVideoAdapter.h>

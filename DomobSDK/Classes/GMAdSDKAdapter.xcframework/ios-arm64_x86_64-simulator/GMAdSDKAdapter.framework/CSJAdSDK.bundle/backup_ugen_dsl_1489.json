@@ -107,7 +107,7 @@
                 "lines": 2,
                 "flexShrink": "0",
                 "maxLines": 2,
-                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_close_gray.png",
+                "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_close_gray.png",
                 "id": "0f9ce8",
                 "name": "Image",
                 "onTap": {
@@ -168,7 +168,7 @@
             "paddingBottom": 0,
             "layoutGravity": "bottom|right",
             "scaleType": "fitXY",
-            "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+            "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
             "flexShrink": "1",
             "onTap": {
               "type": "openPolicy"
@@ -185,7 +185,7 @@
               {
                 "width": 50,
                 "height": 50,
-                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_play.png",
+                "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_play.png",
                 "scaleType": "fitCenter",
                 "layoutGravity": "center",
                 "id": "convertViewShowPlayButton_0e525b",

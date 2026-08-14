@@ -47,7 +47,7 @@
                 "scaleType": "fitXY",
                 "alignSelf": "flex_end",
                 "marginRight": "4",
-                "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+                "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
                 "onTap": {
                     "type": "openPolicy",
                     "uchain": true

@@ -167,7 +167,7 @@
                         "marginTop": "0",
                         "layoutGravity": "left|center_vertical",
                         "scaleType": "fitXY",
-                        "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
+                        "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_logoAd.png",
                         "alignSelf": "center",
                         "onTap": {
                             "type": "openPolicy"
@@ -206,7 +206,7 @@
                         "marginTop": "0",
                         "layoutGravity": "right|center_vertical",
                         "scaleType": "fitXY",
-                        "src": "http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_mpNativebanner_close.png",
+                        "src": "https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_mpNativebanner_close.png",
                         "onTap": {
                             "type": "dislike"
                         }

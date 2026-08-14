@@ -70,7 +70,7 @@
                 "flexShrink": "0",
                 "scaleType": "fitXY",
                 "background": "#00222435",
-                "src": "${setting.voice_control == true ? 'https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_voice_silent.png' : 'http://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_voice.png'}",
+                "src": "${setting.voice_control == true ? 'https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_voice_silent.png' : 'https://sf3-fe-tos.pglstatp-toutiao.com/obj/csj-sdk-static/resources/bu_voice.png'}",
                 "onTap": {
                     "type": "muteVideo",
                     "video_control": "1",
