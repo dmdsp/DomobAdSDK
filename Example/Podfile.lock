@@ -8,12 +8,12 @@ PODS:
     - AnyThinkiOS/AnyThinkSDK (= 6.3.61)
   - AnyThinkiOS/AnyThinkSDK (6.3.61)
   - BaiduMobAdSDK (10.032)
-  - DomobSDK (3.9.0):
-    - DomobSDK/DMAdSDK (= 3.9.0)
-  - DomobSDK/DMAdSDK (3.9.0)
-  - DomobSDK/DomobSDKAdapter (3.9.0):
+  - DomobSDK (3.9.1):
+    - DomobSDK/DMAdSDK (= 3.9.1)
+  - DomobSDK/DMAdSDK (3.9.1)
+  - DomobSDK/DomobSDKAdapter (3.9.1):
     - DomobSDK/DMAdSDK
-  - DomobSDK/GMAdSDKAdapter (3.9.0):
+  - DomobSDK/GMAdSDKAdapter (3.9.1):
     - Ads-CN-Beta (= 6.2.0.0)
     - Ads-CN-Beta/CSJMediation
     - BaiduMobAdSDK
@@ -23,10 +23,10 @@ PODS:
     - GMGdtAdapter-Beta (~> 4.14.71.0)
     - GMKsAdapter-Beta (~> 3.3.64.0.0)
     - KSAdSDK (~> 3.3.64)
-  - DomobSDK/IQAdSDKAdapter (3.9.0):
+  - DomobSDK/IQAdSDKAdapter (3.9.1):
     - DomobSDK/DomobSDKAdapter
     - iAdSDK (~> 2.5.002)
-  - DomobSDK/KSAdSDKAdapter (3.9.0):
+  - DomobSDK/KSAdSDKAdapter (3.9.1):
     - DomobSDK/DomobSDKAdapter
     - KSAdSDK (~> 3.3.61)
   - GDTMobSDK (4.14.90):
@@ -69,7 +69,7 @@ SPEC CHECKSUMS:
   Ads-CN-Beta: 7a82a9a84e5af6b37d78ea1364648f652df26020
   AnyThinkiOS: 61e5aa6a56e6c89f321ed2cc622a2c011716e8ec
   BaiduMobAdSDK: d8f9357d5d1842b4def0370d94e8ad1e1ac2c370
-  DomobSDK: 116521afe65c1984c825ca32e15dad7a9ef1ec00
+  DomobSDK: 20206dd2f446cba8a397b14849f247ccc9b51330
   GDTMobSDK: cb7162e527f2db41f97786f3fb6498544d5d10e7
   GMBaiduAdapter-Beta: e0595477ccde9bd8af59a88bfccc9c05851967d3
   GMGdtAdapter-Beta: f222a1c6c9a762513c24e24c9bbc4b2dc9b51aaf

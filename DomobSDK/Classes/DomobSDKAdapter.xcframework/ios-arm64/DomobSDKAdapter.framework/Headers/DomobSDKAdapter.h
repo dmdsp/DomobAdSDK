@@ -18,14 +18,12 @@ FOUNDATION_EXPORT const unsigned char DomobSDKAdapterVersionString[];
 #import <DomobSDKAdapter/DomobSplashManager.h>
 #import <DomobSDKAdapter/DomobAdManager.h>
 #import <DomobSDKAdapter/DomobFeedManager.h>
-#import <DomobSDKAdapter/DomobBannerManager.h>
 #import <DomobSDKAdapter/DomobInterstitialManager.h>
 #import <DomobSDKAdapter/DomobRewardedVideoManager.h>
 
 #import <DomobSDKAdapter/DomobSplashAdapter.h>
 #import <DomobSDKAdapter/DomobAdapter.h>
 #import <DomobSDKAdapter/DomobFeedAdapter.h>
-#import <DomobSDKAdapter/DomobBannerAdapter.h>
 #import <DomobSDKAdapter/DomobInterstitialAdapter.h>
 #import <DomobSDKAdapter/DomobRewardedVideoAdapter.h>
 #import <DomobSDKAdapter/DomobRewardVideoModel.h>
@@ -35,4 +33,5 @@ FOUNDATION_EXPORT const unsigned char DomobSDKAdapterVersionString[];
 #import <DomobSDKAdapter/DomobHTTPClient.h>
 
 #import <DMAdSDK/DMAds.h>
+#import <DMAdSDK/DMTracker.h>
 

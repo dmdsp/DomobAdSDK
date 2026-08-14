@@ -24,7 +24,13 @@ typedef void(^DomobSplashAdapterCompletion)(DomobSplashAdapter * splashAdapter);
 @property (nonatomic , copy) NSString * materialId ;
 @property(nonatomic, assign) int64_t bidTs;
 @property (nonatomic, strong) DMUnionTrackerModel * trackerModel;
+/// 多盟广告位 id（adsenseid），由 Manager 在发起请求前写入
+@property (nonatomic, copy, nullable) NSString *dmSlotID;
 @property (nonatomic, weak) id<DomobSplashManagerDelegate> delegate;
+/// 链路请求 ID（ap），load 时生成，贯穿整条请求链路
+@property (nonatomic, copy, nullable) NSString *requestId;
+/// ADN 请求 ID（aq），load 时生成，贯穿 ADN 请求链路
+@property (nonatomic, copy, nullable) NSString *adnrequestId;
 
 /// 初始化开屏广告
 /// - Parameter completion: 加载完成后返回的对象

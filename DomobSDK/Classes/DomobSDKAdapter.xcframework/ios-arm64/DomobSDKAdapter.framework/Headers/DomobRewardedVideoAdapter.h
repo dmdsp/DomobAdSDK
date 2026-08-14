@@ -26,7 +26,15 @@ typedef void(^DomobRewardedVideoAdapterCompletion)(DomobRewardedVideoAdapter * r
 @property (nonatomic , copy) NSString * materialId ;
 @property(nonatomic, assign) int64_t bidTs;
 @property (nonatomic, strong) DMUnionTrackerModel * trackerModel;
+/// 多盟广告位 id（adsenseid），由 Manager 在发起请求前写入
+@property (nonatomic, copy, nullable) NSString *dmSlotID;
 @property (nonatomic, weak) id<DomobRewardedVideoManagerDelegate> delegate;
+/// 链路请求 ID（ap），load 时生成，贯穿整条请求链路
+@property (nonatomic, copy, nullable) NSString *requestId;
+/// ADN 请求 ID（aq），load 时生成，贯穿 ADN 请求链路
+@property (nonatomic, copy, nullable) NSString *adnrequestId;
+/// 广告源渠道 ID（多盟=10000 快手=10002 gromore=10004 爱奇艺=10008），load 时由子类写入
+@property (nonatomic, assign) NSInteger adchannelId;
 
 /// 初始化激励视频和配置、代理
 /// - Parameter delegate: 代理
@@ -41,6 +49,8 @@ typedef void(^DomobRewardedVideoAdapterCompletion)(DomobRewardedVideoAdapter * r
 /// - Parameter viewController: 当前要展示的控制器
 -(void)showRewardedVideoViewInRootViewController:(UIViewController *)viewController;
 -(NSString*)getUnionSdkTracker;
+/// 放入缓存池时上报（8003）
+- (void)trackCacheAdd;
 @end
 
 @protocol DomobRewardedVideoManagerDelegate <NSObject>

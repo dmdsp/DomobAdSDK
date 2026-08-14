@@ -9,7 +9,6 @@
 #import <DMAdSDK/DMAds.h>
 #import <DMAdSDK/DM_SplashAd.h>
 #import "FeedAdViewController.h"
-#import "BannerAdViewController.h"
 #import "InterstitialAdViewController.h"
 #import "RewardVideoAdViewController.h"
 
@@ -124,8 +123,6 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
         FeedAdViewController * feed = [[FeedAdViewController alloc]init];
         [self.navigationController pushViewController:feed animated:YES];
     }else if (indexPath.row==4){
-        BannerAdViewController * banner = [[BannerAdViewController alloc]init];
-        [self.navigationController pushViewController:banner animated:YES];
     }else if (indexPath.row==5){
         InterstitialAdViewController * interstitial = [[InterstitialAdViewController alloc]init];
         [self.navigationController pushViewController:interstitial animated:YES];

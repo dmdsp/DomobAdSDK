@@ -8,7 +8,6 @@
 #import "DMViewController.h"
 #import "SplashAdViewController.h"
 #import "SplashAdapterViewController.h"
-#import "ToponSplashViewController.h"
 
 
 static NSString *cellWithIdentifier = @"cellWithIdentifier";
@@ -85,8 +84,6 @@ static NSString *cellWithIdentifier = @"cellWithIdentifier";
         SplashAdapterViewController * splashVC = [[SplashAdapterViewController alloc]init];
         [self.navigationController pushViewController:splashVC animated:YES];
     }else if (indexPath.row==2) {
-        ToponSplashViewController * splashVC = [[ToponSplashViewController alloc]init];
-        [self.navigationController pushViewController:splashVC animated:YES];
     }else{
 //        // 使用 Custom URL Scheme 跳转到另一个应用
 //        NSURL *url = [NSURL URLWithString:@"alipay://"];
