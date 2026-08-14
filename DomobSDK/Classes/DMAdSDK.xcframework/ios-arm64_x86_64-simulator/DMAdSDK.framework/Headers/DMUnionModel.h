@@ -30,8 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) int32_t splashReqTimeout;
 /** 信息流并发请求超时时间 */
 @property(nonatomic, assign) int32_t feedReqTimeout;
-/** banner并发请求超时时间 */
-@property(nonatomic, assign) int32_t bannerReqTimeout;
 /** 插屏并发请求超时时间 */
 @property(nonatomic, assign) int32_t interactionReqTimeout;
 /** 激励视频并发请求超时时间 */

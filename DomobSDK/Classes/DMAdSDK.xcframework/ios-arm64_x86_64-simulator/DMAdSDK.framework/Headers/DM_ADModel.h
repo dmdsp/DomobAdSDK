@@ -7,7 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class DM_DspConfig;
+@class DM_AdsConfig;
+@class DM_AdsConfiguration;
 
 @interface DM_ADModel : NSObject
 /**
@@ -93,7 +94,13 @@
 /** 视频时长，单位毫秒 */
 @property(nonatomic, assign) int32_t videoDuration;
 
-@property(nonatomic, strong) DM_DspConfig * option;
+@property(nonatomic, strong) DM_AdsConfig *option;
+
+/** 广告随素材下发的完整配置 */
+@property(nonatomic, strong, nullable) DM_AdsConfiguration *configuration;
+
+/** 关闭按钮 dislike 选项，key 为 int 类型选项 ID，value 为展示文案 */
+@property(nonatomic, strong, nullable) NSMutableDictionary<NSNumber*, NSString*> *closeButtons;
 
 /** 广告来源标识 */
 @property (nonatomic,copy) NSString *adSource;

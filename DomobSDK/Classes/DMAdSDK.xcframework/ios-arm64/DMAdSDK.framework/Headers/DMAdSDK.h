@@ -19,8 +19,6 @@ FOUNDATION_EXPORT const unsigned char DMAdSDKVersionString[];
 #import <DMAdSDK/DM_SplashAd.h>
 #import <DMAdSDK/DM_FeedAd.h>
 #import <DMAdSDK/DM_FeedView.h>
-#import <DMAdSDK/DM_BannerAd.h>
-#import <DMAdSDK/DM_BannerView.h>
 #import <DMAdSDK/DM_InterstitialAd.h>
 #import <DMAdSDK/DM_RewardVideoAd.h>
 #import <DMAdSDK/DM_RewarVideoModel.h>
@@ -29,4 +27,5 @@ FOUNDATION_EXPORT const unsigned char DMAdSDKVersionString[];
 #import <DMAdSDK/DM_ADModel.h>
 #import <DMAdSDK/DMShakeInfo.h>
 #import <DMAdSDK/DMTracker.h>
+#import <DMAdSDK/DMPrivacyConfig.h>
 

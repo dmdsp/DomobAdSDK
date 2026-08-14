@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "DMPrivacyConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -49,8 +50,8 @@ typedef void(^CompletionEvent)(BOOL success);
 
 // 单例
 +(instancetype)shareInstance;
-/// 关闭定位权限,但还是需要配置,只是SDK不会去获取定位信息
--(void)setLocationDisable;
+/// 隐私配置，需在 initSDK 前调用
+- (void)setPrivacyConfig:(DMPrivacyConfig *)config;
 //SDK 初始化
 -(void)initSDK;
 //聚合初始化

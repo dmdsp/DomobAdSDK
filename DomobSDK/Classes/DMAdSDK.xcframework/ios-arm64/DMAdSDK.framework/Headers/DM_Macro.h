@@ -41,11 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 #define  Font_text_14 [UIFont systemFontOfSize:14]
 #define  Font_text_16 [UIFont systemFontOfSize:16]
 
-#ifdef DEBUG   //处于开发阶段
-#define Kog(...) NSLog(__VA_ARGS__)
-#else          //处于发布状态(没有输出)
-#define  Kog(...)
-#endif
 
 //获得存储的对象
 #define UserDefaultObject(A) [[NSUserDefaults standardUserDefaults]objectForKey:A]
@@ -67,14 +62,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define GCDWithGlobal(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
 #define GCDWithMain(block) dispatch_async(dispatch_get_main_queue(),block)
-
-/*     用法
- TICK
- do your work here
- TOCK
- */
-#define TICK NSDate *startTime = [NSDate date];
-#define TOCK NSLog(@"时间:%f", -[startTime timeIntervalSinceNow]);
 
 /* 判断是否为iPhone */
 #define isiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
@@ -139,9 +126,6 @@ NS_ASSUME_NONNULL_BEGIN
 #define kTempPath NSTemporaryDirectory()
 //获取沙盒Cache路径
 #define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
-
-#define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
-#define kEndTime  NSLog(@"时间: %f", CFAbsoluteTimeGetCurrent() - start)
 
 #define FONT(F) [UIFont fontWithName:@"PingFang SC" size:F]
 

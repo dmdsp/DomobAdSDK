@@ -99,7 +99,6 @@ typedef NS_ENUM(NSInteger, DMTrackAdType) {
     DMTrackAdType_Feed                = 20005, // 信息流
     DMTrackAdType_RewardVideo         = 10002, // 激励视频-竖版
     DMTrackAdType_RewardVideoLandscape= 70001, // 激励视频-横版
-    DMTrackAdType_Banner              = 40001, // Banner
 };
 
 // ─────────────────────────────────────────────
@@ -168,6 +167,10 @@ typedef NS_ENUM(NSInteger, DMTrackAdType) {
 @property (nonatomic, assign) NSInteger bidPrice;
 /// 实际曝光价格（分，聚合场景中可能与 bidPrice 不同）
 @property (nonatomic, assign) NSInteger impPrice;
+/// 竞价成功时开发者回传的竞胜价（bj，仅 8001 使用）
+@property (nonatomic, assign) NSInteger winPrice;
+/// 竞价失败时开发者回传的次高价（bk，仅 8002 使用）
+@property (nonatomic, assign) NSInteger losePrice;
 
 @end
 
