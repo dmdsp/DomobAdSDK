@@ -4,13 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/Pods_DMAd.framework/Info.plist</key>
+		<data>
+		ce3Z7JvN5+nxAbe5GVKF5HAFFcE=
+		</data>
+		<key>Frameworks/Pods_DMAd.framework/Pods_DMAd</key>
+		<data>
+		YEeLX+FLwvcc6JR4N+UdgRstjSg=
+		</data>
+		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
+		<data>
+		cwFM84dSvIxvpo0/1omxh8ZKsUk=
+		</data>
 		<key>Headers/DMAdSDK.h</key>
 		<data>
 		jhEE15jwHersgv5uzYhkLQXLpSU=
 		</data>
 		<key>Headers/DMAds.h</key>
 		<data>
-		MR59N0ooCDko6EQLuKscwnBm0wM=
+		8LPFIZF8ND4FIHcgdisUg55rV0M=
 		</data>
 		<key>Headers/DMPrivacyConfig.h</key>
 		<data>
@@ -71,6 +83,39 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/Pods_DMAd.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ce3Z7JvN5+nxAbe5GVKF5HAFFcE=
+			</data>
+			<key>hash2</key>
+			<data>
+			+OZSSZUPh4HrlQ+kP75CmAiCzRPZQ8fpF0HFmXzDEb8=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_DMAd.framework/Pods_DMAd</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YEeLX+FLwvcc6JR4N+UdgRstjSg=
+			</data>
+			<key>hash2</key>
+			<data>
+			3JRZhIfDF4UUXvX0I8d7tvkuRuzmha0go68EE5CR+UU=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cwFM84dSvIxvpo0/1omxh8ZKsUk=
+			</data>
+			<key>hash2</key>
+			<data>
+			f7SzFGulzOt55FeGUSqXp578sXBXPHOZHfEXmOQ471Y=
+			</data>
+		</dict>
 		<key>Headers/DMAdSDK.h</key>
 		<dict>
 			<key>hash</key>
@@ -86,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MR59N0ooCDko6EQLuKscwnBm0wM=
+			8LPFIZF8ND4FIHcgdisUg55rV0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			2JD1bryHTOA+9chswulYcMS8LWdYvenadAg/cDVdFpE=
+			DssgezU+B3kid8E0tGUJ01li9NJyN90Tkdk70e0tnro=
 			</data>
 		</dict>
 		<key>Headers/DMPrivacyConfig.h</key>

@@ -54,6 +54,8 @@ typedef void(^CompletionEvent)(BOOL success);
 - (void)setPrivacyConfig:(DMPrivacyConfig *)config;
 //SDK 初始化
 -(void)initSDK;
+/// 优化版初始化，冷启动广告展示速度更快，建议在适配器集成完善后使用。
+-(void)initSDKOptimized;
 //聚合初始化
 -(void)initUnionSDKCompletion:(CompletionEvent) completion;
 //获取SDK版本号
