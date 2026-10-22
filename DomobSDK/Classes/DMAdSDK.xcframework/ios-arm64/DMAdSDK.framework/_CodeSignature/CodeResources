@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/Pods_DMAd.framework/Pods_DMAd</key>
 		<data>
-		VvKojYa0Ytzvzuo4oeKMHUWHUno=
+		c6Enlc8+w4i+0DmCfXjb1BUKy9I=
 		</data>
 		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/DMPrivacyConfig.h</key>
 		<data>
-		EizAfAQpHkRglddpOlWEjxVfANs=
+		yFI0ADCU4QmpZIDTRGiBjgbZlfE=
 		</data>
 		<key>Headers/DMShakeInfo.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/DM_ADModel.h</key>
 		<data>
-		DofreoHoek8V0eAxyWYp/RP68Ig=
+		7X1ZVat654eIaKTw+EP8/f1OS6w=
 		</data>
 		<key>Headers/DM_FeedAd.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/DM_FeedView.h</key>
 		<data>
-		fQ8LVnUzaRN2ZNG8MKbEhivIulU=
+		xTk0nlFEQ1F7JVMDIlvxwJjWY7A=
 		</data>
 		<key>Headers/DM_InterstitialAd.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/DM_Macro.h</key>
 		<data>
-		plgY7gvdmeiDTs7AQM9cXh85RpM=
+		iySkCQNDdNGv7FtOG/rP3fIfl58=
 		</data>
 		<key>Headers/DM_RewarVideoModel.h</key>
 		<data>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VvKojYa0Ytzvzuo4oeKMHUWHUno=
+			c6Enlc8+w4i+0DmCfXjb1BUKy9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			J6IIr1F5CPMXk2h+nmeOHaZt+A4dX6vVSqE42Clv7RI=
+			ZBQ79R/rGSxe9hNpQQCj9kObX3MCWzFYE9+xl6LvbFY=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
@@ -142,11 +142,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EizAfAQpHkRglddpOlWEjxVfANs=
+			yFI0ADCU4QmpZIDTRGiBjgbZlfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			mQArLxFQ6H/m5+uNqCS/wBqHqVDwvFEKoYV4/axb/4M=
+			uBaWDSE16LrSMt6NZ6eHIfWRjmkg7zVZNoSg2oP7ICI=
 			</data>
 		</dict>
 		<key>Headers/DMShakeInfo.h</key>
@@ -186,11 +186,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DofreoHoek8V0eAxyWYp/RP68Ig=
+			7X1ZVat654eIaKTw+EP8/f1OS6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			QpvUoHNycTe42FaAiK46vjO7YRlmHRwmRGN2lh5RuNU=
+			V3Z/VOnfGrMORt64+LW82THRhT4IV0/BChPrfn3G2a0=
 			</data>
 		</dict>
 		<key>Headers/DM_FeedAd.h</key>
@@ -208,11 +208,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fQ8LVnUzaRN2ZNG8MKbEhivIulU=
+			xTk0nlFEQ1F7JVMDIlvxwJjWY7A=
 			</data>
 			<key>hash2</key>
 			<data>
-			d0MH0ZWK0BrHOvjEdhv4sw20yM5XExhetACG/223d8o=
+			cL0fdX1YzYnv/8m5rzc5xSkNjIH9f3mmbCRvM1e+ezw=
 			</data>
 		</dict>
 		<key>Headers/DM_InterstitialAd.h</key>
@@ -230,11 +230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			plgY7gvdmeiDTs7AQM9cXh85RpM=
+			iySkCQNDdNGv7FtOG/rP3fIfl58=
 			</data>
 			<key>hash2</key>
 			<data>
-			irt8Dcbv6s8ajqsYvLD2gsXimO59GhERlglhIQUaVLI=
+			PT6SS4VJ8kkY9NQ6/ifwt4+ONWUa79cI5/FLYgzXO0Q=
 			</data>
 		</dict>
 		<key>Headers/DM_RewarVideoModel.h</key>

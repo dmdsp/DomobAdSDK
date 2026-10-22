@@ -6,13 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 //获取系统对象
 #define kApplication        [UIApplication sharedApplication]
-#define kAppWindow          [UIApplication sharedApplication].delegate.window
+#define kAppWindow          [DM_Macro currentKeyWindow]
 #define kAppDelegate        [AppDelegate shareAppDelegate]
-#define kRootViewController [UIApplication sharedApplication].delegate.window.rootViewController
+#define kRootViewController [DM_Macro currentRootViewController]
 #define kUserDefaults       [NSUserDefaults standardUserDefaults]
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 
@@ -152,6 +153,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DM_Macro : NSObject
 
 + (NSBundle *)currectBundle;
+
+// 兼容 UIScene 生命周期：优先从前台激活的 UIWindowScene 取 keyWindow，取不到再回退到 AppDelegate.window
++ (nullable UIWindow *)currentKeyWindow;
++ (nullable UIViewController *)currentRootViewController;
 
 @end
 

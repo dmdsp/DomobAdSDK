@@ -105,9 +105,23 @@
 /** 广告来源标识 */
 @property (nonatomic,copy) NSString *adSource;
 
-/** 开始播放上报URL */
+/** 开始播放上报URL（type=1） */
 @property (nonatomic, copy) NSArray *eventTrackStartUrl;
-/** 暂停播放上报URL */
+/** 视频广告有效上报URL（type=2） */
+@property (nonatomic, copy) NSArray *eventTrackValidUrl;
+/** 视频播放四分之一上报URL（type=9） */
+@property (nonatomic, copy) NSArray *eventTrackQ1Url;
+/** 播放一半上报URL（type=7） */
+@property (nonatomic, copy) NSArray *eventTrackHalfUrl;
+/** 播放四分之三上报URL（type=10） */
+@property (nonatomic, copy) NSArray *eventTrackQ3Url;
+/** 视频播放完成上报URL（type=3） */
+@property (nonatomic, copy) NSArray *eventTrackCompleteUrl;
+/** 播放3秒上报URL（type=11） */
+@property (nonatomic, copy) NSArray *eventTrack3sUrl;
+/** 播放5秒上报URL（type=12） */
+@property (nonatomic, copy) NSArray *eventTrack5sUrl;
+/** 切后台/关闭上报URL（type=8） */
 @property (nonatomic, copy) NSArray *eventTrackPauseUrl;
 
 @end

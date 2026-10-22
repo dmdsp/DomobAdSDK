@@ -47,6 +47,8 @@ typedef void(^VideoDidPauseEvent)(void);
 @property (nonatomic, strong) UIView *bgView;
 //背景image
 @property (nonatomic, strong) UIImageView *adImageView;
+//高斯模糊背景层，铺在 adImageView 下方填充留白区
+@property (nonatomic, strong) UIImageView *blurBgView;
 //摇一摇gif
 @property (nonatomic, strong) UIImageView *shakeView;
 @property (nonatomic, strong) DM_ADModel *adModel;

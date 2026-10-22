@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL canUseCarrier;     // 默认 YES
 
 /// 个性化广告推荐开关。
-/// 关闭后：不采集设备型号/系统版本/运营商/语言等字段，不上报曝光/点击埋点。
+/// 关闭后：不采集设备型号/系统版本/语言/国家/设备名/时区等字段。
 @property (nonatomic, assign) BOOL personalizedAdEnabled; // 默认 YES
 
 @end
