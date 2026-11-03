@@ -4,18 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/Pods_DMAd.framework/Info.plist</key>
-		<data>
-		FG+eCFZoQs4DCg8pa1Wl2Dfg7IA=
-		</data>
-		<key>Frameworks/Pods_DMAd.framework/Pods_DMAd</key>
-		<data>
-		c6Enlc8+w4i+0DmCfXjb1BUKy9I=
-		</data>
-		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Lzhl/8/GlRLs5l90LaXGHeAuYeE=
-		</data>
 		<key>Headers/DMAdSDK.h</key>
 		<data>
 		jhEE15jwHersgv5uzYhkLQXLpSU=
@@ -74,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2kpHnBDurdrJ60SwIBJxjc08ljw=
+		yIMiiuzNmFRAguU7o9HiSrnsyjI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,39 +71,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/Pods_DMAd.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FG+eCFZoQs4DCg8pa1Wl2Dfg7IA=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZE/Fr44gEM51RSYB2CYipcnHfIgmFy4phyELdKhSU/c=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_DMAd.framework/Pods_DMAd</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c6Enlc8+w4i+0DmCfXjb1BUKy9I=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZBQ79R/rGSxe9hNpQQCj9kObX3MCWzFYE9+xl6LvbFY=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_DMAd.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Lzhl/8/GlRLs5l90LaXGHeAuYeE=
-			</data>
-			<key>hash2</key>
-			<data>
-			/RJdl21RDIa5cSp4uPTThE5Q5hX1sRbS4JirLDNmlAg=
-			</data>
-		</dict>
 		<key>Headers/DMAdSDK.h</key>
 		<dict>
 			<key>hash</key>
